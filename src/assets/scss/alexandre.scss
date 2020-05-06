@@ -1,0 +1,96 @@
+.btn-action {
+  margin-bottom: 40px;
+}
+
+.btn-login {
+  border: none;
+
+  &:hover {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.centered {
+    text-align: center;
+}
+
+.discord {
+    img {
+        width: 50%;
+    }
+}
+
+.red {
+    background-color: $primary;
+    color: white; 
+    
+    h1, h2 {
+        color: white; 
+    }
+}
+
+.inverse {
+    background-color: rgba(black, 0.8);
+    color: white; 
+    
+    h1, h2 {
+        color: white; 
+    }
+}
+
+.lead {
+    font-weight: 400;
+}
+
+.footer {
+  background-color: black;
+
+  .copyright {
+    color: gray;
+  }
+}
+
+.hero-img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgb(75, 75, 75);
+  font-weight: bold;
+}
+
+.navbar-dark {
+  background-color: black;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    .nav-item {
+      margin-right: 1rem;
+    }
+    .btn-login {
+        margin-left: 1rem;
+    }
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  :not(.btn-login) {
+    color: $primary;
+  }
+}
+
+.navbar-brand img {
+  height: 35px;
+}
