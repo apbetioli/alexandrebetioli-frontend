@@ -6,6 +6,9 @@ import {
   Button,
   Container,
   Col,
+  DropdownItem,
+  DropdownMenu,
+  DropdownToggle,
   Row,
   Nav,
   Navbar,
@@ -13,11 +16,12 @@ import {
   NavItem,
   NavLink,
   UncontrolledCollapse,
-  UncontrolledTooltip,
+  UncontrolledDropdown
 } from "reactstrap";
 
-class Header extends React.Component {
+import MenuItem from "components/MenuItem";
 
+class Header extends React.Component {
   render() {
     return (
       <>
@@ -29,17 +33,22 @@ class Header extends React.Component {
           >
             <Container>
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-                <img alt="..." src={require("assets/img/logo.png")} />
+                <img alt="..." src={require("assets/img/logo192.png")} />
               </NavbarBrand>
+
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
               </button>
+
               <UncontrolledCollapse navbar toggler="#navbar_global">
                 <div className="navbar-collapse-header">
                   <Row>
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
-                      <img alt="..." src={require("assets/img/logo-black.png")} />
+                        <img
+                          alt="..."
+                          src={require("assets/img/logo-black.png")}
+                        />
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">
@@ -50,95 +59,100 @@ class Header extends React.Component {
                     </Col>
                   </Row>
                 </div>
-                
+
+                <Nav className="navbar-nav-hover align-items-lg-center" navbar>
+                  <MenuItem id="starterlink" text="STARTER" href="/starter" />
+                  <MenuItem id="cursolink" text="PRO" href="/curso" icon="fa fa-user-graduate" />
+                  <MenuItem
+                    href="https://discord.gg/EZJgchr"
+                    icon="fa fa-users"
+                    id="comunidadelink"
+                    tooltip="Participe da comunidade"
+                    text="COMUNIDADE"
+                    target="_blank"
+                  />
+
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <i className="fa fa-download mr-1" />
+                      <span className="nav-link-inner--text">DOWNLOADS</span>
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      <DropdownItem to="/planilha" tag={Link}>
+                        <i className="fa fa-download" />
+                        Planilha de precificação
+                      </DropdownItem>
+                      <DropdownItem
+                        href="https://github.com/apbetioli/Marlin/tree/ender3"
+                        target="_blank"
+                      >
+                        <i className="fa fa-download" />
+                        Marlin 2.0 para Ender 3
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                </Nav>
+
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                  <NavItem>
-                    <NavLink
-                      className="nav-link-icon"
-                      href="/starter"
-                      id="starterlink"
-                    >
-                      <i className="fa fa-rocket" />
-                      <span className="nav-link-inner--text ml-2">Starter</span>
-                    </NavLink>
-                  </NavItem>
+                  <MenuItem
+                    id="facebooklink"
+                    icon="fa fa-facebook-square"
+                    text="Facebook"
+                    textClass="d-lg-none"
+                    href="https://www.facebook.com/alexandrebetioli3d"
+                    target="_blank"
+                    tooltip="Curta nossa página no Facebook"
+                  />
 
-                  <NavItem>
-                    <NavLink
-                      className="nav-link-icon"
-                      href="/starter"
-                      id="starterlink"
-                    >
-                      <i className="fa fa-rocket" />
-                      <span className="nav-link-inner--text ml-2">PRO</span>
-                    </NavLink>
-                  </NavItem>
+                  <MenuItem
+                    id="instagramlink"
+                    icon="fa fa-instagram"
+                    text="Instagram"
+                    textClass="d-lg-none"
+                    href="https://www.instagram.com/alexandrebetioli3d"
+                    target="_blank"
+                    tooltip="Siga-nos no Instagram"
+                  />
 
-                  <NavItem>
-                    <NavLink
-                      className="nav-link-icon"
-                      href="https://www.facebook.com/alexandrebetioli3d"
-                      id="facebooklink"
-                      target="_blank"
-                    >
-                      <i className="fa fa-facebook-square" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Facebook
-                      </span>
-                    </NavLink>
-                    <UncontrolledTooltip delay={0} target="facebooklink">
-                      Curta nossa página no Facebook
-                    </UncontrolledTooltip>
-                  </NavItem>
+                  <MenuItem
+                    id="youtubelink"
+                    icon="fa fa-youtube"
+                    text="Youtube"
+                    textClass="d-lg-none"
+                    href="https://www.youtube.com/channel/UCsW8AqQR62iwXoiWYfe-ovA"
+                    target="_blank"
+                    tooltip="Inscreva-se no canal do YouTube"
+                  />
 
-                  <NavItem>
-                    <NavLink
-                      className="nav-link-icon"
-                      href="https://www.instagram.com/alexandrebetioli3d"
-                      id="instagramlink"
-                      target="_blank"
-                    >
-                      <i className="fa fa-instagram" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Instagram
-                      </span>
-                    </NavLink>
-                    <UncontrolledTooltip delay={0} target="instagramlink">
-                      Siga-nos no Instagram
-                    </UncontrolledTooltip>
-                  </NavItem>
+                  <MenuItem
+                    id="telegramlink"
+                    icon="fa fa-telegram-plane"
+                    text="Telegram"
+                    textClass="d-lg-none"
+                    href="https://t.me/alexandrebetioli3d"
+                    target="_blank"
+                    tooltip="Entre no canal do Telegram"
+                  />
 
-                  <NavItem>
-                    <NavLink
-                      className="nav-link-icon"
-                      href="https://www.youtube.com/channel/UCsW8AqQR62iwXoiWYfe-ovA"
-                      id="youtubelink"
-                      target="_blank"
-                    >
-                      <i className="fa fa-youtube" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Youtube
-                      </span>
-                    </NavLink>
-                    <UncontrolledTooltip delay={0} target="youtubelink">
-                      Inscreva-se no Youtube
-                    </UncontrolledTooltip>
-                  </NavItem>
-
-                  <NavItem>
+                  <NavItem className="d-none">
                     <Button
-                      className="btn-primary btn-login"
+                      className="btn-primary btn-login d-none d-lg-block"
                       href="/login"
                       id="loginbtn"
                     >
                       <i className="fa fa-lock" />
                       <span className="nav-link-inner--text">Entrar</span>
                     </Button>
-                    <UncontrolledTooltip delay={0} target="loginbtn">
-                      Acesse a área de membros
-                    </UncontrolledTooltip>
-                  </NavItem>
 
+                    <NavLink
+                      className="nav-link-icon d-lg-none"
+                      href="/login"
+                      id="loginlink"
+                    >
+                      <i className="fa fa-lock" />
+                      <span className="nav-link-inner--text ml-2"> Entrar</span>
+                    </NavLink>
+                  </NavItem>
                 </Nav>
               </UncontrolledCollapse>
             </Container>

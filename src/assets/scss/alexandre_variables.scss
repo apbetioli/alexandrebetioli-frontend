@@ -1,6 +1,18 @@
 $default: #4b4b4b !default;
 $primary: #dd3333 !default;
 
-$font-family-base: 'Roboto', 'Open Sans', sans-serif !default;
+$discord: #7289da !default;
+$telegram: #0088cc !default;
+
+$brand-colors: () !default;
+$brand-colors: map-merge(
+  (
+    "telegram": $telegram,
+    "discord": $discord
+  ),
+  $brand-colors
+);
+
+$font-family-base: "Roboto", "Open Sans", sans-serif !default;
 
 $navbar-nav-link-font-size: 1rem;

@@ -15,36 +15,42 @@
   transform: translateY(-3px);
 }
 
+.card-img-top {
+  height: 180px;
+}
+
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
 .discord {
-    img {
-        width: 50%;
-    }
+  img {
+    width: 50%;
+  }
 }
 
 .red {
-    background-color: $primary;
-    color: white; 
-    
-    h1, h2 {
-        color: white; 
-    }
+  background-color: $primary;
+  color: white;
+
+  h1,
+  h2 {
+    color: white;
+  }
 }
 
 .inverse {
-    background-color: rgba(black, 0.8);
-    color: white; 
-    
-    h1, h2 {
-        color: white; 
-    }
+  background-color: rgba(black, 0.8);
+  color: white;
+
+  h1,
+  h2 {
+    color: white;
+  } 
 }
 
 .lead {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .footer {
@@ -52,6 +58,10 @@
 
   .copyright {
     color: gray;
+  }
+
+  img {
+    height: 20px;
   }
 }
 
@@ -79,7 +89,7 @@ h6 {
       margin-right: 1rem;
     }
     .btn-login {
-        margin-left: 1rem;
+      margin-left: 1rem;
     }
   }
 }
@@ -93,4 +103,52 @@ h6 {
 
 .navbar-brand img {
   height: 35px;
+}
+
+.row > [class*="col-"] {
+  margin-top: 1rem;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.social-img {
+  max-width: 125px;
+  margin-bottom: 20px;
+}
+
+.color-telegram {
+  color: $telegram;
+}
+
+.background-color-telegram {
+  background-color: $telegram;
+  border-color: $telegram;
+  color: white;
+}
+
+.color-youtube {
+  color: $youtube;
+}
+
+.background-color-youtube {
+  background-color: $youtube;
+  border-color: $youtube;
+  color: white;
+}
+
+
+.color-discord {
+  color: $discord;
+}
+
+.background-color-discord {
+  background-color: $discord;
+  border-color: $discord;
+  color: white;
+}
+
+.subtitle {
+  color: darkgray;
 }
