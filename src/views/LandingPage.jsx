@@ -1,12 +1,20 @@
 import ActionButton from "components/ActionButton";
 import EmailForm from "components/EmailForm";
+import Footer from "components/Footer";
+import Header from "components/Header";
 import React from "react";
-import { Col, Container, Form, Row } from "reactstrap";
+import { Button, Col, Container, Form, Row } from "reactstrap";
 
 class LandingPage extends React.Component {
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.refs.main.scrollTop = 0;
+  }
   render() {
     return (
-      <>
+      <div ref="main">
+        <Header />
         <section className="section black">
           <Container className="hero">
             <Row>
@@ -16,7 +24,7 @@ class LandingPage extends React.Component {
                   No meio de tanta informação que surge todos os dias, você
                   precisa de alguém que te leve na direção certa.
                 </p>
-                <ActionButton text="É ISSO QUE EU QUERO" href="/starter" />
+                <ActionButton text="É ISSO QUE EU QUERO" to="/starter" />
               </Col>
               <Col lg="6">
                 <img
@@ -42,7 +50,7 @@ class LandingPage extends React.Component {
                   Curso 100% online para você dar os primeiros passos. E o
                   melhor, de graça!
                 </p>
-                <ActionButton text="Garantir meu acesso" href="/starter" />
+                <ActionButton text="Garantir meu acesso" to="/starter" />
               </Col>
               <Col lg="6">
                 <h2>
@@ -54,7 +62,7 @@ class LandingPage extends React.Component {
                   Para quem quer dar o próximo passo e obter o máximo da
                   impressão 3D.
                 </p>
-                <ActionButton text="Reservar minha vaga" href="/curso" />
+                <ActionButton text="Reservar minha vaga" to="/curso" />
               </Col>
             </Row>
           </Container>
@@ -77,12 +85,13 @@ class LandingPage extends React.Component {
                   com outros profissionais do mercado de impressão 3D.
                 </p>
 
-                <ActionButton
-                  text="Acessar comunidade"
+                <Button
                   color="primary"
                   href="https://discord.gg/EZJgchr"
                   target="_blank"
-                />
+                >
+                  Acessar comunidade
+                </Button>
               </Col>
               <Col lg="6" className="centered">
                 <img alt="..." src={require("assets/img/discord.png")} />
@@ -115,7 +124,8 @@ class LandingPage extends React.Component {
             </Row>
           </Container>
         </section>
-      </>
+        <Footer />
+      </div>
     );
   }
 }

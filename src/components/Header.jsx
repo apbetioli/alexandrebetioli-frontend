@@ -1,25 +1,20 @@
+import MenuItem from "components/MenuItem";
 import React from "react";
-
-import { Link } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
 import {
-  Button,
-  Container,
   Col,
+  Container,
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
-  Row,
   Nav,
   Navbar,
   NavbarBrand,
   NavItem,
-  NavLink,
+  Row,
   UncontrolledCollapse,
-  UncontrolledDropdown
+  UncontrolledDropdown,
 } from "reactstrap";
-
-import MenuItem from "components/MenuItem";
 
 class Header extends React.Component {
   render() {
@@ -44,12 +39,12 @@ class Header extends React.Component {
                 <div className="navbar-collapse-header">
                   <Row>
                     <Col className="collapse-brand" xs="6">
-                      <Link to="/">
+                      <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                         <img
                           alt="..."
                           src={require("assets/img/logo-black.png")}
                         />
-                      </Link>
+                      </NavbarBrand>
                     </Col>
                     <Col className="collapse-close" xs="6">
                       <button className="navbar-toggler" id="navbar_global">
@@ -61,8 +56,18 @@ class Header extends React.Component {
                 </div>
 
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <MenuItem id="starterlink" text="STARTER" href="/starter" />
-                  <MenuItem id="cursolink" text="PRO" href="/curso" icon="fa fa-user-graduate" />
+                  <MenuItem
+                    id="starterlink"
+                    text="STARTER"
+                    to="/starter"
+                    icon="fa fa-rocket"
+                  />
+                  <MenuItem
+                    id="cursolink"
+                    text="PRO"
+                    to="/curso"
+                    icon="fa fa-user-graduate"
+                  />
                   <MenuItem
                     href="https://discord.gg/EZJgchr"
                     icon="fa fa-users"
@@ -100,7 +105,6 @@ class Header extends React.Component {
                     text="Facebook"
                     textClass="d-lg-none"
                     href="https://www.facebook.com/alexandrebetioli3d"
-                    target="_blank"
                     tooltip="Curta nossa página no Facebook"
                   />
 
@@ -110,7 +114,6 @@ class Header extends React.Component {
                     text="Instagram"
                     textClass="d-lg-none"
                     href="https://www.instagram.com/alexandrebetioli3d"
-                    target="_blank"
                     tooltip="Siga-nos no Instagram"
                   />
 
@@ -120,23 +123,22 @@ class Header extends React.Component {
                     text="Youtube"
                     textClass="d-lg-none"
                     href="https://www.youtube.com/channel/UCsW8AqQR62iwXoiWYfe-ovA"
-                    target="_blank"
                     tooltip="Inscreva-se no canal do YouTube"
                   />
 
                   <NavItem className="d-none">
-                    <Button
-                      className="btn-primary btn-login d-none d-lg-block"
-                      href="/login"
+                    <NavLink
+                      className="nav-link-icon btn-primary btn-login d-none d-lg-block"
+                      to="/login"
                       id="loginbtn"
                     >
                       <i className="fa fa-lock" />
                       <span className="nav-link-inner--text">Entrar</span>
-                    </Button>
+                    </NavLink>
 
                     <NavLink
                       className="nav-link-icon d-lg-none"
-                      href="/login"
+                      to="/login"
                       id="loginlink"
                     >
                       <i className="fa fa-lock" />

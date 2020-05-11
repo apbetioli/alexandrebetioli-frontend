@@ -1,25 +1,32 @@
+import Footer from "components/Footer";
+import Header from "components/Header";
 import React from "react";
-
 import {
   Button,
   Card,
-  CardHeader,
   CardBody,
-  FormGroup,
+  CardHeader,
+  Col,
+  Container,
   Form,
+  FormGroup,
   Input,
+  InputGroup,
   InputGroupAddon,
   InputGroupText,
-  InputGroup,
-  Container,
   Row,
-  Col,
 } from "reactstrap";
 
 class Login extends React.Component {
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.refs.main.scrollTop = 0;
+  }
   render() {
     return (
-      <>
+      <div ref="main">
+        <Header />
         <section className="section section-shaped section-lg">
           <div className="shape shape-style-1 bg-gradient-default">
             <span />
@@ -132,7 +139,8 @@ class Login extends React.Component {
             </Row>
           </Container>
         </section>
-      </>
+        <Footer />
+      </div>
     );
   }
 }

@@ -2,12 +2,19 @@ import EmailForm from "components/EmailForm";
 import QuemSouEu from "components/QuemSouEu";
 import React from "react";
 import { Col, Container, Form, Row } from "reactstrap";
-
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 class CursoPro extends React.Component {
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.refs.main.scrollTop = 0;
+  }
   render() {
     return (
-      <>
+      <div ref="main">
+        <Header />
         <section className="section">
           <Container>
             <Row>
@@ -40,7 +47,8 @@ class CursoPro extends React.Component {
         <section className="section inverse">
           <QuemSouEu />
         </section>
-      </>
+        <Footer />
+      </div>
     );
   }
 }

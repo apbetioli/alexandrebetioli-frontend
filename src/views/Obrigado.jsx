@@ -3,11 +3,19 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
 import ActionButton from "components/ActionButton";
+import Header from "components/Header";
+import Footer from "components/Footer";
 
 class Obrigado extends React.Component {
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.refs.main.scrollTop = 0;
+  }
   render() {
     return (
-      <>
+      <div ref="main">
+        <Header />
         <section className="section">
           <Container>
             <Row>
@@ -54,7 +62,8 @@ class Obrigado extends React.Component {
             </Row>
           </Container>
         </section>
-      </>
+        <Footer />
+      </div>
     );
   }
 }

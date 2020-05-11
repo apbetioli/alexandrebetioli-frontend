@@ -1,38 +1,40 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import "assets/vendor/font-awesome/css/font-awesome.min.css";
-import "assets/scss/argon-design-system-react.scss";
-import 'index.css';
+import {
+  HashRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
 
-import LandingPage from "views/LandingPage";
 import CursoPro from "views/CursoPro";
 import CursoStarter from "views/CursoStarter";
-import Planilha from "views/Planilha";
+import LandingPage from "views/LandingPage";
 import Login from "views/Login";
 import Obrigado from "views/Obrigado";
-import Header from "components/Header";
-import Footer from "components/Footer";
+import Planilha from "views/Planilha";
+
+import "assets/scss/argon-design-system-react.scss";
+import "assets/vendor/font-awesome/css/font-awesome.min.css";
+import "index.css";
 
 ReactDOM.render(
   <>
-    <BrowserRouter>
-      <Header />
+    <Router>
       <Switch>
-        <Route path="/" exact render={(props) => <LandingPage {...props} />} />
-        <Route path="/curso" exact render={(props) => <CursoPro {...props} />} />
-        <Route path="/starter" exact render={(props) => <CursoStarter {...props} />} />
-        <Route path="/planilha" exact render={(props) => <Planilha {...props} />} />
-        <Route path="/login" exact render={(props) => <Login {...props} />} />
-        <Route path="/obrigado-espera" exact render={(props) => <Obrigado {...props} />} />
-        <Route path="/obrigado-planilha" exact render={(props) => <Obrigado {...props} />} />
-        <Route path="/obrigado-live" exact render={(props) => <Obrigado {...props} />} />
+        <Route path="/" exact component={LandingPage} />
+        <Route path="/curso" exact component={CursoPro} />
+        <Route path="/starter" exact component={CursoStarter} />
+        <Route path="/planilha" exact component={Planilha} />
+        <Route path="/login" exact component={Login} />
+        <Route path="/obrigado-espera" exact component={Obrigado} />
+        <Route path="/obrigado-planilha" exact component={Obrigado} />
+        <Route path="/obrigado-live" exact component={Obrigado} />
         <Redirect to="/" />
       </Switch>
-      <Footer/>
-    </BrowserRouter>
+    </Router>
   </>,
   document.getElementById("root")
 );
@@ -41,4 +43,3 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
