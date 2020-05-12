@@ -1,10 +1,7 @@
-import React from "react";
-
-import { Container, Row, Col } from "reactstrap";
-
-import ActionButton from "components/ActionButton";
-import Header from "components/Header";
 import Footer from "components/Footer";
+import Header from "components/Header";
+import React from "react";
+import { Button, Col, Container, Row } from "reactstrap";
 
 class Obrigado extends React.Component {
   componentDidMount() {
@@ -36,12 +33,13 @@ class Obrigado extends React.Component {
                   com outros profissionais do mercado de impressão 3D.
                 </p>
 
-                <ActionButton
-                  text="Acessar comunidade"
+                <Button
                   className="background-color-discord"
-                  href="https://discord.gg/EZJgchr"
+                  href="https://discord.gg/sVXPeBn"
                   target="_blank"
-                />
+                >
+                  Acessar comunidade
+                </Button>
               </Col>
               <Col lg="6">
                 <h3>
@@ -52,12 +50,13 @@ class Obrigado extends React.Component {
                   E para aprender mais sobre impressão 3D se inscreva no meu
                   canal do Youtube onde posto novos conteúdos toda semana.
                 </p>
-                <ActionButton
-                  text="Inscrever-se no YouTube"
+                <Button
                   color="youtube"
                   href="https://www.youtube.com/channel/UCsW8AqQR62iwXoiWYfe-ovA?sub_confirmation=1"
                   target="_blank"
-                />
+                >
+                  Inscrever-se no YouTube
+                </Button>
               </Col>
             </Row>
           </Container>

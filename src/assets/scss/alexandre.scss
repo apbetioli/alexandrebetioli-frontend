@@ -131,6 +131,13 @@ iframe {
   background-color: $discord;
   border-color: $discord;
   color: white;
+
+  &:hover,
+  &:focus {
+    background-color: $discord;
+    border-color: $discord;
+    color: white;
+  }
 }
 
 .subtitle {
