@@ -79,17 +79,6 @@ h6 {
   background-color: black;
 }
 
-@media (min-width: 992px) {
-  .navbar-nav {
-    .nav-item {
-      margin-right: 1rem;
-    }
-    .btn-login {
-      margin-left: 1rem;
-    }
-  }
-}
-
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
   :not(.btn-login) {
@@ -181,6 +170,17 @@ iframe {
   color: $primary;
 }
 
+.comunidade {
+  p,
+  li {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    text-align: justify;
+  }
+}
+
 @media (max-width: 991.98px) {
   .navbar-nav {
     .nav-link {
@@ -192,13 +192,18 @@ iframe {
   }
 }
 
-.comunidade {
-  p,
-  li {
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-top: 1.5rem;
-    text-align: justify;
+@media (min-width: 992px) {
+  .navbar-nav {
+    .nav-item {
+      margin-right: 1rem;
+    }
+    .btn-login {
+      margin-left: 1rem;
+    }
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

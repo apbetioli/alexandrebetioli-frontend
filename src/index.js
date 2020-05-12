@@ -1,25 +1,22 @@
+import "assets/scss/argon-design-system-react.scss";
+import "assets/vendor/font-awesome/css/font-awesome.min.css";
+import "index.css";
 import React from "react";
 import ReactDOM from "react-dom";
-import * as serviceWorker from "./serviceWorker";
-
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Redirect,
   Route,
   Switch,
 } from "react-router-dom";
-
+import Comunidade from "views/Comunidade";
 import CursoPro from "views/CursoPro";
 import CursoStarter from "views/CursoStarter";
 import LandingPage from "views/LandingPage";
 import Login from "views/Login";
 import Obrigado from "views/Obrigado";
 import Planilha from "views/Planilha";
-import Comunidade from "views/Comunidade";
-
-import "assets/scss/argon-design-system-react.scss";
-import "assets/vendor/font-awesome/css/font-awesome.min.css";
-import "index.css";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <>
