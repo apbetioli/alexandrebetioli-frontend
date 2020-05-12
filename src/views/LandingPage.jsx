@@ -106,6 +106,7 @@ class LandingPage extends React.Component {
                 </h2>
                 <p className="lead">Prometemos não enviar spam</p>
 
+                <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
                 <form
                   action="https://app.convertkit.com/forms/1377394/subscriptions"
                   method="post"

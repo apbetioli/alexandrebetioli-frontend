@@ -31,6 +31,7 @@ class CursoStarter extends React.Component {
                   Cadastre-se para ser aviso quando o curso estiver disponível!
                 </p>
 
+                <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
                 <form
                   action="https://app.convertkit.com/forms/1327091/subscriptions"
                   method="post"
