@@ -15,6 +15,7 @@ import LandingPage from "views/LandingPage";
 import Login from "views/Login";
 import Obrigado from "views/Obrigado";
 import Planilha from "views/Planilha";
+import Comunidade from "views/Comunidade";
 
 import "assets/scss/argon-design-system-react.scss";
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
@@ -27,6 +28,7 @@ ReactDOM.render(
         <Route path="/" exact component={LandingPage} />
         <Route path="/curso" exact component={CursoPro} />
         <Route path="/starter" exact component={CursoStarter} />
+        <Route path="/comunidade" exact component={Comunidade} />
         <Route path="/planilha" exact component={Planilha} />
         <Route path="/login" exact component={Login} />
         <Route path="/obrigado-espera" exact component={Obrigado} />

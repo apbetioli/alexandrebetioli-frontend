@@ -3,7 +3,7 @@ import EmailForm from "components/EmailForm";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
-import { Button, Col, Container, Form, Row } from "reactstrap";
+import { Col, Container, Form, Row } from "reactstrap";
 
 class LandingPage extends React.Component {
   componentDidMount() {
@@ -85,13 +85,9 @@ class LandingPage extends React.Component {
                   com outros profissionais do mercado de impressão 3D.
                 </p>
 
-                <Button
-                  color="primary"
-                  href="https://discord.gg/EZJgchr"
-                  target="_blank"
-                >
+                <ActionButton color="primary" to="/comunidade">
                   Acessar comunidade
-                </Button>
+                </ActionButton>
               </Col>
               <Col lg="6" className="centered">
                 <img alt="..." src={require("assets/img/discord.png")} />

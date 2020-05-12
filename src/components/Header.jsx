@@ -69,12 +69,10 @@ class Header extends React.Component {
                     icon="fa fa-user-graduate"
                   />
                   <MenuItem
-                    href="https://discord.gg/EZJgchr"
+                    to="/comunidade"
                     icon="fa fa-users"
                     id="comunidadelink"
-                    tooltip="Participe da comunidade"
                     text="COMUNIDADE"
-                    target="_blank"
                   />
 
                   <UncontrolledDropdown nav>
