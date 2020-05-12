@@ -1,9 +1,9 @@
 import EmailForm from "components/EmailForm";
+import Footer from "components/Footer";
+import Header from "components/Header";
 import QuemSouEu from "components/QuemSouEu";
 import React from "react";
-import { Col, Container, Form, Row } from "reactstrap";
-import Header from "components/Header";
-import Footer from "components/Footer";
+import { Col, Container, Row } from "reactstrap";
 
 class CursoStarter extends React.Component {
   componentDidMount() {
@@ -31,7 +31,7 @@ class CursoStarter extends React.Component {
                   Cadastre-se para ser aviso quando o curso estiver disponível!
                 </p>
 
-                <Form
+                <form
                   action="https://app.convertkit.com/forms/1327091/subscriptions"
                   method="post"
                   data-sv-form="1327091"
@@ -40,7 +40,7 @@ class CursoStarter extends React.Component {
                   data-options='{"settings":{"after_subscribe":{"action":"redirect","success_message":"Sucesso! Now check your email to confirm your subscription.","redirect_url":"https://alexandrebetioli.com.br/obrigado-espera"},"analytics":{"google":null,"facebook":null,"segment":null,"pinterest":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":false,"url":"https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form"},"recaptcha":{"enabled":true},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
                 >
                   <EmailForm />
-                </Form>
+                </form>
               </Col>
             </Row>
           </Container>
