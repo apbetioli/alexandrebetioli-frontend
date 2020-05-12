@@ -30,7 +30,6 @@ class CursoPro extends React.Component {
               <Col lg="8">
                 <p className="lead">Garanta sua vaga para a próxima turma!</p>
 
-                <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
                 <form
                   action="https://app.convertkit.com/forms/1327091/subscriptions"
                   method="post"
@@ -41,7 +40,6 @@ class CursoPro extends React.Component {
                 >
                   <EmailForm />
                 </form>
-                
               </Col>
             </Row>
           </Container>

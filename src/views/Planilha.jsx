@@ -24,7 +24,6 @@ class Planilha extends React.Component {
                   com todos os detalhes de como utilizar a planilha.
                 </p>
 
-                <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
                 <form
                   action="https://app.convertkit.com/forms/1288625/subscriptions"
                   method="post"
