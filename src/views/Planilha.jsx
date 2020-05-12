@@ -3,6 +3,7 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
 import { Card, CardBody, CardImg, Col, Container, Row } from "reactstrap";
+import { MetaTags } from "react-meta-tags";
 
 class Planilha extends React.Component {
   componentDidMount() {
@@ -13,6 +14,14 @@ class Planilha extends React.Component {
   render() {
     return (
       <div ref="main">
+        <MetaTags>
+          <title>Impressão 3D - Alexandre Betioli</title>
+          <meta
+            name="description"
+            content="Aprenda a calcular o preço das suas impressões 3D e comece a ter lucro de verdade."
+          />
+        </MetaTags>
+
         <Header />
         <section className="section">
           <Container>

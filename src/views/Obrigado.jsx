@@ -2,6 +2,7 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
 import { Button, Col, Container, Row } from "reactstrap";
+import { ReactTitle } from "react-meta-tags";
 
 class Obrigado extends React.Component {
   componentDidMount() {
@@ -12,6 +13,8 @@ class Obrigado extends React.Component {
   render() {
     return (
       <div ref="main">
+        <ReactTitle title="Obrigado - Alexandre Betioli" />
+
         <Header />
         <section className="section">
           <Container>

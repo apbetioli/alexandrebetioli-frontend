@@ -3,6 +3,7 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import QuemSouEu from "components/QuemSouEu";
 import React from "react";
+import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
 
 class CursoPro extends React.Component {
@@ -14,6 +15,14 @@ class CursoPro extends React.Component {
   render() {
     return (
       <div ref="main">
+        <MetaTags>
+          <title>Aprenda a vender impressão 3D - Alexandre Betioli</title>
+          <meta
+            name="description"
+            content="Treinamento para quem quer dar o próximo passo e começar a lucrar com impressão 3D. Explore as oportunidades que a impressão 3D tem a oferecer."
+          />
+        </MetaTags>
+
         <Header />
         <section className="section">
           <Container>

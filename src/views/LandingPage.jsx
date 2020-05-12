@@ -3,6 +3,7 @@ import EmailForm from "components/EmailForm";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
+import MetaTags from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
 
 class LandingPage extends React.Component {
@@ -14,6 +15,14 @@ class LandingPage extends React.Component {
   render() {
     return (
       <div ref="main">
+        <MetaTags>
+          <title>Impressão 3D - Alexandre Betioli</title>
+          <meta
+            name="description"
+            content="Aprenda sobre impressão 3D, participe de comunidades de discussão e potencialize seu aprendizado."
+          />
+        </MetaTags>
+
         <Header />
         <section className="section black">
           <Container className="hero">

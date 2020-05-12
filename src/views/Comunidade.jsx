@@ -1,6 +1,7 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
+import { MetaTags } from "react-meta-tags";
 import { Button, Col, Container, Row } from "reactstrap";
 
 class Comunidade extends React.Component {
@@ -12,6 +13,14 @@ class Comunidade extends React.Component {
   render() {
     return (
       <div ref="main">
+        <MetaTags>
+          <title>Comunidade AB3D - Alexandre Betioli</title>
+          <meta
+            name="description"
+            content="Participe da comunidade e acelere seu aprendizado interajindo com outros profissionais do mercado de impressão 3D."
+          />
+        </MetaTags>
+
         <Header />
         <section className="section comunidade">
           <Container>

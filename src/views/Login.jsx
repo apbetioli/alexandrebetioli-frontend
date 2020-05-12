@@ -16,6 +16,7 @@ import {
   InputGroupText,
   Row,
 } from "reactstrap";
+import { ReactTitle } from "react-meta-tags";
 
 class Login extends React.Component {
   componentDidMount() {
@@ -26,6 +27,8 @@ class Login extends React.Component {
   render() {
     return (
       <div ref="main">
+        <ReactTitle title="Área de membros - Alexandre Betioli" />
+
         <Header />
         <section className="section section-shaped section-lg">
           <div className="shape shape-style-1 bg-gradient-default">
