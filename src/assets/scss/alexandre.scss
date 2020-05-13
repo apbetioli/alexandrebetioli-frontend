@@ -144,16 +144,8 @@ iframe {
   color: $default;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
-
-  &.active,
-  &:hover {
-    color: $primary;
-  }
-}
-
-.navbar-nav {
+.navbar-dark .navbar-nav {
+  .nav-link,
   .nav-link-icon {
     color: white;
 
@@ -162,10 +154,6 @@ iframe {
       color: $primary;
     }
   }
-}
-
-.dropdown-item {
-  color: $default;
 }
 
 .dropdown:hover,
@@ -191,10 +179,20 @@ iframe {
 @media (max-width: 991.98px) {
   .navbar-nav {
     .nav-link {
+      color: white !important;
       padding: 0;
     }
     .nav-item {
       margin-bottom: 1rem;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-collapse.collapsing,
+  .navbar-collapse.show {
+    background-color: #000;
+    .navbar-toggler span {
+      background-color: darkgray;
     }
   }
 }

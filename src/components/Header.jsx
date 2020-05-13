@@ -42,7 +42,7 @@ class Header extends React.Component {
                       <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
                         <img
                           alt="..."
-                          src={require("assets/img/logo-black.png")}
+                          src={require("assets/img/logo.png")}
                         />
                       </NavbarBrand>
                     </Col>
