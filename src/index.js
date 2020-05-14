@@ -16,6 +16,8 @@ import LandingPage from "views/LandingPage";
 import Login from "views/Login";
 import Obrigado from "views/Obrigado";
 import Planilha from "views/Planilha";
+import ObrigadoPlanilha from "views/ObrigadoPlanilha";
+
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
@@ -29,8 +31,10 @@ ReactDOM.render(
         <Route path="/planilha" exact component={Planilha} />
         <Route path="/login" exact component={Login} />
         <Route path="/obrigado-espera" exact component={Obrigado} />
-        <Route path="/obrigado-planilha" exact component={Obrigado} />
+        <Route path="/obrigado-planilha" exact component={ObrigadoPlanilha} />
         <Route path="/obrigado-live" exact component={Obrigado} />
+        <Route path="/obrigado-news" exact component={Obrigado} />
+        <Route path="/obrigado-starter" exact component={Obrigado} />
         <Redirect to="/" />
       </Switch>
     </Router>

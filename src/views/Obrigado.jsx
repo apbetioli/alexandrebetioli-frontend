@@ -20,12 +20,17 @@ class Obrigado extends React.Component {
           <Container>
             <Row>
               <Col lg="12">
-                <h1>Próximos passos...</h1>
-                <br />
+                <h1>Obrigado!</h1>
               </Col>
             </Row>
             <Row>
-              <Col lg="6">
+              <Col lg="12">
+                {this.props.children}
+                <p className="lead">Próximos passos...</p>
+              </Col>
+            </Row>
+            <Row>
+              <Col lg="6" className="d-none">
                 <h2>
                   <i className="fa fa-discord color-discord" />
                   <span> Participe da comunidade</span>
@@ -42,6 +47,26 @@ class Obrigado extends React.Component {
                   target="_blank"
                 >
                   Acessar comunidade
+                </Button>
+              </Col>
+              <Col lg="6">
+                <h2>
+                  <i className="fa fa-telegram color-telegram" />
+                  <span> Junte-se no Telegram</span>
+                </h2>
+
+                <p className="lead">
+                  Clique abaixo e cadastre-se para receber avisos e atualizações
+                  de aulas e novos conteúdos através do meu canal exclusivo no
+                  Telegram.
+                </p>
+
+                <Button
+                  className="background-color-telegram"
+                  href="https://t.me/alexandrebetioli3d"
+                  target="_blank"
+                >
+                  Acessar o Telegram
                 </Button>
               </Col>
               <Col lg="6">
