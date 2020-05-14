@@ -19,6 +19,7 @@ import Planilha from "views/Planilha";
 import ObrigadoPlanilha from "views/ObrigadoPlanilha";
 
 import * as serviceWorker from "./serviceWorker";
+import ObrigadoCompra from "views/ObrigadoCompra";
 
 ReactDOM.render(
   <>
@@ -33,8 +34,9 @@ ReactDOM.render(
         <Route path="/obrigado-espera" exact component={Obrigado} />
         <Route path="/obrigado-planilha" exact component={ObrigadoPlanilha} />
         <Route path="/obrigado-live" exact component={Obrigado} />
-        <Route path="/obrigado-news" exact component={Obrigado} />
-        <Route path="/obrigado-starter" exact component={Obrigado} />
+        <Route path="/obrigado-boleto" exact component={ObrigadoCompra} />
+        <Route path="/obrigado-curso" exact component={ObrigadoCompra} />
+        <Route path="/obrigado-paypal" exact component={ObrigadoCompra} />
         <Redirect to="/" />
       </Switch>
     </Router>

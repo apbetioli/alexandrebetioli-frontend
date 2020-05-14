@@ -40,10 +40,7 @@ class Header extends React.Component {
                   <Row>
                     <Col className="collapse-brand" xs="6">
                       <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-                        <img
-                          alt="..."
-                          src={require("assets/img/logo.png")}
-                        />
+                        <img alt="..." src={require("assets/img/logo.png")} />
                       </NavbarBrand>
                     </Col>
                     <Col className="collapse-close" xs="6">
@@ -122,6 +119,15 @@ class Header extends React.Component {
                     textClass="d-lg-none"
                     href="https://www.youtube.com/channel/UCsW8AqQR62iwXoiWYfe-ovA"
                     tooltip="Inscreva-se no canal do YouTube"
+                  />
+
+                  <MenuItem
+                    id="telegramlink"
+                    icon="fa fa-telegram-plane"
+                    text="Telegram"
+                    textClass="d-lg-none"
+                    href="https://t.me/alexandrebetioli3d"
+                    tooltip="Entre no canal do Telegram"
                   />
 
                   <NavItem className="d-none">
