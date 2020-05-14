@@ -24,7 +24,7 @@ class CursoStarter extends React.Component {
         </MetaTags>
 
         <Header />
-        <section className="section">
+        <section className="section centered">
           <Container>
             <Row>
               <Col lg="12">
