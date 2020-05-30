@@ -130,14 +130,14 @@ class Header extends React.Component {
                     tooltip="Entre no canal do Telegram"
                   />
 
-                  <NavItem className="d-none">
+                  <NavItem>
                     <NavLink
                       className="nav-link-icon btn-primary btn-login d-none d-lg-block"
                       to="/login"
                       id="loginbtn"
                     >
                       <i className="fa fa-lock" />
-                      <span className="nav-link-inner--text">Entrar</span>
+                      <span className="nav-link-inner--text"> Entrar</span>
                     </NavLink>
 
                     <NavLink
