@@ -6,7 +6,6 @@ class MenuItem extends React.Component {
   render() {
     return (
       <NavItem>
-
         {this.props.to && (
           <NavLink
             activeClassName="active"
@@ -15,6 +14,7 @@ class MenuItem extends React.Component {
             id={this.props.id}
           >
             <i className={this.props.icon} />
+            &nbsp;
             <span
               className={"nav-link-inner--text ml-2 " + this.props.textClass}
             >
@@ -31,12 +31,13 @@ class MenuItem extends React.Component {
             target={this.props.target}
             rel="noopener noreferrer"
           >
-            <i className={this.props.icon} />
-            <span
-              className={"nav-link-inner--text ml-2 " + this.props.textClass}
-            >
-              {this.props.text}
-            </span>
+              <i className={this.props.icon} />
+              &nbsp;
+              <span
+                className={"nav-link-inner--text ml-2 " + this.props.textClass}
+              >
+                {this.props.text}
+              </span>
           </a>
         )}
 
@@ -54,7 +55,7 @@ MenuItem.defaultProps = {
   icon: "fa fa-rocket",
   target: "_blank",
   text: "Link",
-  textClass: ""
+  textClass: "",
 };
 
 export default MenuItem;

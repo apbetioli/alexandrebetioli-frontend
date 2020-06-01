@@ -1,5 +1,5 @@
-import MenuItem from "components/MenuItem";
 import React from "react";
+import MenuItem from "components/MenuItem";
 import { Link, NavLink } from "react-router-dom";
 import {
   Col,
@@ -13,7 +13,7 @@ import {
   NavItem,
   Row,
   UncontrolledCollapse,
-  UncontrolledDropdown,
+  UncontrolledDropdown
 } from "reactstrap";
 
 class Header extends React.Component {
@@ -28,7 +28,8 @@ class Header extends React.Component {
           >
             <Container>
               <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-                <img alt="..." src={require("assets/img/logo192.png")} />
+                <img alt="..." src={require("assets/img/logo192.png")} className="d-none d-lg-block" />
+                <img alt="..." src={require("assets/img/logo.png")} className="d-lg-none" />
               </NavbarBrand>
 
               <button className="navbar-toggler" id="navbar_global">
@@ -53,25 +54,19 @@ class Header extends React.Component {
                 </div>
 
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <MenuItem
-                    id="starterlink"
+                <MenuItem
+                    id="cursostarter"
                     text="STARTER"
                     to="/starter"
-                    icon="fa fa-rocket"
-                  />
-                  <MenuItem
-                    id="cursolink"
-                    text="PRO"
-                    to="/curso"
                     icon="fa fa-user-graduate"
                   />
                   <MenuItem
-                    to="/comunidade"
-                    icon="fa fa-users"
-                    id="comunidadelink"
-                    text="COMUNIDADE"
+                    id="cursolink"
+                    text="3D COMMERCE"
+                    to="/curso"
+                    icon="fa fa-rocket"
                   />
-
+                  
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
                       <i className="fa fa-download mr-1" />

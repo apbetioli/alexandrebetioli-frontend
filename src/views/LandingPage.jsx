@@ -51,25 +51,22 @@ class LandingPage extends React.Component {
             <Row>
               <Col lg="6">
                 <h2>
-                  <i className="fa fa-rocket" />
-                  <span> Starter</span>
+                <i className="fa fa-user-graduate" />
+                  <span> STARTER</span>
                 </h2>
-
-                <p className="lead">
-                  Curso 100% online para você dar os primeiros passos. E o
-                  melhor, de graça!
+                <p>
+                  Curso 100% online para você dar os primeiros passos. 
+                  E o melhor, de graça!
                 </p>
                 <ActionButton text="Garantir meu acesso" to="/starter" />
               </Col>
               <Col lg="6">
                 <h2>
-                  <i className="fa fa-user-graduate" />
-                  <span> PRO</span>
+                  <i className="fa fa-rocket" />
+                  <span> 3D COMMERCE</span>
                 </h2>
-
-                <p className="lead">
-                  Para quem quer dar o próximo passo e obter o máximo da
-                  impressão 3D.
+                <p>
+                  Para quem quer dar o próximo passo e começar a lucrar com esta tecnologia.
                 </p>
                 <ActionButton text="Reservar minha vaga" to="/curso" />
               </Col>
@@ -77,7 +74,7 @@ class LandingPage extends React.Component {
           </Container>
         </section>
 
-        <section id="comunidade" className="section discord">
+        <section id="comunidade" className="section discord d-none">
           <Container>
             <Row>
               <Col lg="6">
@@ -89,7 +86,7 @@ class LandingPage extends React.Component {
                   </span>
                 </h2>
 
-                <p className="lead">
+                <p>
                   Potencialize o seu aprendizado. Tire suas dúvidas e interaja
                   com outros profissionais do mercado de impressão 3D.
                 </p>
@@ -105,15 +102,16 @@ class LandingPage extends React.Component {
           </Container>
         </section>
 
-        <section className="section inverse">
+        <section className="section">
           <Container>
             <Row>
               <Col lg="12">
                 <h2>
                   <i className="fa fa-envelope" />
-                  <span> Receba conteúdos exclusivos</span>
+                  <span> Newsletter</span>
                 </h2>
-                <p className="lead">Prometemos não enviar spam</p>
+                <p className="lead">Receba notificações de novidades e conteúdos exclusivos.</p>
+                <p>Prometemos não enviar spam!</p>
 
                 <form
                   action="https://app.convertkit.com/forms/1377394/subscriptions"

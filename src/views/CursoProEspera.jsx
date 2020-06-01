@@ -6,7 +6,7 @@ import React from "react";
 import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
 
-class CursoPro extends React.Component {
+class CursoProEspera extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
@@ -16,10 +16,12 @@ class CursoPro extends React.Component {
     return (
       <div ref="main">
         <MetaTags>
-          <title>Aprenda a vender impressão 3D - Alexandre Betioli</title>
+          <title>
+            Crie seu negócio online de impressão 3D - Alexandre Betioli
+          </title>
           <meta
             name="description"
-            content="Treinamento para quem quer dar o próximo passo e começar a lucrar com impressão 3D. Explore as oportunidades que a impressão 3D tem a oferecer."
+            content="Treinamento para quem não tem tempo a perder e quer começar a lucrar com impressão 3D."
           />
         </MetaTags>
 
@@ -27,17 +29,15 @@ class CursoPro extends React.Component {
         <section className="section">
           <Container>
             <Row>
-              <Col lg="12">
-                <h1 className="centered">
-                  Treinamento para quem quer dar o próximo passo e começar a
-                  lucrar com impressão 3D
-                </h1>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg="2"></Col>
-              <Col lg="8">
-                <p className="lead">Garanta sua vaga para a próxima turma!</p>
+              <Col lg="6">
+                <h1>Crie seu negócio online de impressão 3D</h1>
+                <p className="lead">
+                  Treinamento para quem não tem tempo a perder e quer
+                  <span className="text-primary"> começar a lucrar com impressão 3D</span>.
+                </p>
+                <p>
+                  <span className="text-primary">Garanta sua vaga</span> para a próxima turma!
+                </p>
 
                 <form
                   action="https://app.convertkit.com/forms/1327091/subscriptions"
@@ -49,6 +49,9 @@ class CursoPro extends React.Component {
                 >
                   <EmailForm />
                 </form>
+              </Col>
+              <Col lg="6" className="centered">
+                <img alt="..." src={require("assets/img/factory.jpg")} className="hero-img" />
               </Col>
             </Row>
           </Container>
@@ -62,4 +65,4 @@ class CursoPro extends React.Component {
   }
 }
 
-export default CursoPro;
+export default CursoProEspera;

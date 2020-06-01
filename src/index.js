@@ -10,7 +10,7 @@ import {
   Switch,
 } from "react-router-dom";
 import Comunidade from "views/Comunidade";
-import CursoPro from "views/CursoPro";
+import CursoProEspera from "views/CursoProEspera";
 import CursoStarter from "views/CursoStarter";
 import LandingPage from "views/LandingPage";
 import Login from "views/Login";
@@ -26,7 +26,7 @@ ReactDOM.render(
     <Router>
       <Switch>
         <Route path="/" exact component={LandingPage} />
-        <Route path="/curso" exact component={CursoPro} />
+        <Route path="/curso" exact component={CursoProEspera} />
         <Route path="/starter" exact component={CursoStarter} />
         <Route path="/comunidade" exact component={Comunidade} />
         <Route path="/planilha" exact component={Planilha} />

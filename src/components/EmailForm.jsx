@@ -53,7 +53,7 @@ class EmailForm extends React.Component {
               <i className="fa fa-lock"></i>
               <span> Suas informações estão seguras</span>
             </div>
-          </Col>          
+          </Col>
         </Row>
       </>
     );

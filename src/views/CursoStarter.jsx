@@ -16,28 +16,23 @@ class CursoStarter extends React.Component {
     return (
       <div ref="main">
         <MetaTags>
-          <title>Curso gratuito de impressão 3D - Alexandre Betioli</title>
+          <title>Aulas gratuitas de impressão 3D - Alexandre Betioli</title>
           <meta
             name="description"
-            content="Comece a explorar tudo o que a impressão 3D tem a te oferecer com este curso gratuito."
+            content="Comece a explorar tudo o que a impressão 3D tem a te oferecer com estas aulas gratuitas."
           />
         </MetaTags>
 
         <Header />
-        <section className="section centered">
+        <section className="section">
           <Container>
             <Row>
-              <Col lg="12">
-                <h1>
-                  Comece a explorar tudo o que a impressão 3D tem a te oferecer.
-                  E o melhor, é grátis!
-                </h1>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg="2"></Col>
-              <Col lg="8">
+              <Col lg="6">
+                <h1>Curso <span className="text-primary">STARTER</span> de Impressão 3D</h1>
                 <p className="lead">
+                  Estou preparando um super curso para iniciantes na impressão 3D e vai ser <span className="text-primary">totalmente gratuito</span>.
+                </p>
+                <p>
                   Cadastre-se para ser avisado quando o curso estiver
                   disponível!
                 </p>
@@ -52,6 +47,9 @@ class CursoStarter extends React.Component {
                 >
                   <EmailForm />
                 </form>
+              </Col>
+              <Col lg="6" className="centered">
+                <img alt="..." src={require("assets/img/starter.png")} className="hero-img" />
               </Col>
             </Row>
           </Container>
