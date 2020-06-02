@@ -2,8 +2,8 @@ import EmailForm from "components/EmailForm";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
-import { Card, CardBody, CardImg, Col, Container, Row } from "reactstrap";
 import { MetaTags } from "react-meta-tags";
+import { Card, CardBody, CardImg, Col, Container, Row } from "reactstrap";
 
 class Planilha extends React.Component {
   componentDidMount() {
@@ -23,12 +23,12 @@ class Planilha extends React.Component {
         </MetaTags>
 
         <Header />
-        <section className="section">
+        <section className="section black">
           <Container>
             <Row>
               <Col lg="6">
                 <h1>Receba a planilha em seu email gratuitamente</h1>
-                <p className="lead">
+                <p>
                   Não deixe de assistir o vídeo onde eu explico o passo a passo
                   com todos os detalhes de como utilizar a planilha.
                 </p>
@@ -55,8 +55,13 @@ class Planilha extends React.Component {
                   allowFullScreen
                 ></iframe>
               </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className="section">
+          <Container>
+            <Row>
               <Col lg="12">
-                <br />
                 <h2 className="centered">Por que baixar esta planilha?</h2>
               </Col>
               <Col lg="4">

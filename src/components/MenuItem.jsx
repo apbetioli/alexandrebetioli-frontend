@@ -32,7 +32,6 @@ class MenuItem extends React.Component {
             rel="noopener noreferrer"
           >
               <i className={this.props.icon} />
-              &nbsp;
               <span
                 className={"nav-link-inner--text ml-2 " + this.props.textClass}
               >

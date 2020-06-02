@@ -15,7 +15,7 @@ class QuemSouEu extends React.Component {
             />
           </Col>
           <Col lg="6">
-            <h2>Alexandre Betioli</h2>
+            <h2 className="mt-4"><span className="text-primary">Alexandre</span> Betioli</h2>
             <p>
               Apaixonado por impressão 3D e empreendedorismo. 
               Já construí várias impressoras 3D do zero e fui co-fundador do

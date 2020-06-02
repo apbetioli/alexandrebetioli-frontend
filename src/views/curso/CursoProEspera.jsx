@@ -3,40 +3,31 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import QuemSouEu from "components/QuemSouEu";
 import React from "react";
-import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
 
 class CursoProEspera extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
   render() {
     return (
-      <div ref="main">
-        <MetaTags>
-          <title>
-            Crie seu negócio online de impressão 3D - Alexandre Betioli
-          </title>
-          <meta
-            name="description"
-            content="Treinamento para quem não tem tempo a perder e quer começar a lucrar com impressão 3D."
-          />
-        </MetaTags>
-
+      <div>
         <Header />
-        <section className="section">
+        <section className="section black">
           <Container>
             <Row>
               <Col lg="6">
-                <h1>Crie seu negócio online de impressão 3D</h1>
+                <h1>
+                  Crie seu <span className="text-primary">negócio online</span>{" "}
+                  de impressão 3D
+                </h1>
                 <p className="lead">
                   Treinamento para quem não tem tempo a perder e quer
-                  <span className="text-primary"> começar a lucrar com impressão 3D</span>.
+                  <span className="text-primary">
+                    {" "}
+                    começar a lucrar com impressão 3D
+                  </span>
                 </p>
                 <p>
-                  <span className="text-primary">Garanta sua vaga</span> para a próxima turma!
+                  <span className="">Garanta sua vaga</span> para a próxima
+                  turma!
                 </p>
 
                 <form
@@ -50,13 +41,17 @@ class CursoProEspera extends React.Component {
                   <EmailForm />
                 </form>
               </Col>
-              <Col lg="6" className="centered">
-                <img alt="..." src={require("assets/img/factory.jpg")} className="hero-img" />
+              <Col lg="6">
+                <img
+                  alt="..."
+                  src={require("assets/img/factory.jpg")}
+                  className="hero-img"
+                />
               </Col>
             </Row>
           </Container>
         </section>
-        <section className="section inverse">
+        <section className="section">
           <QuemSouEu />
         </section>
         <Footer />

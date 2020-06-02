@@ -45,6 +45,16 @@
   }
 }
 
+.black {
+  background-color: rgba(black, 1);
+  color: white;
+
+  h1,
+  h2 {
+    color: white;
+  }
+}
+
 .footer {
   background-color: black;
 
@@ -71,6 +81,7 @@ h6 {
   color: rgb(75, 75, 75);
   font-weight: bold;
 }
+
 
 .navbar-dark {
   background-color: black;

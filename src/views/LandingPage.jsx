@@ -28,7 +28,7 @@ class LandingPage extends React.Component {
           <Container className="hero">
             <Row>
               <Col lg="6">
-                <h1>Impressão 3D direto ao ponto e do jeito certo</h1>
+                <h1><span>Impressão 3D</span> direto ao ponto e do jeito certo</h1>
                 <p className="lead">
                   No meio de tanta informação que surge todos os dias, você
                   precisa de alguém que te leve na direção certa.
@@ -46,13 +46,13 @@ class LandingPage extends React.Component {
           </Container>
         </section>
 
-        <section className="section inverse">
+        <section className="section">
           <Container>
             <Row>
               <Col lg="6">
                 <h2>
                 <i className="fa fa-user-graduate" />
-                  <span> STARTER</span>
+                  <span> Starter</span>
                 </h2>
                 <p>
                   Curso 100% online para você dar os primeiros passos. 
@@ -63,7 +63,7 @@ class LandingPage extends React.Component {
               <Col lg="6">
                 <h2>
                   <i className="fa fa-rocket" />
-                  <span> 3D COMMERCE</span>
+                  <span> 3D Commerce</span>
                 </h2>
                 <p>
                   Para quem quer dar o próximo passo e começar a lucrar com esta tecnologia.
@@ -102,7 +102,7 @@ class LandingPage extends React.Component {
           </Container>
         </section>
 
-        <section className="section">
+        <section className="section inverse">
           <Container>
             <Row>
               <Col lg="12">
