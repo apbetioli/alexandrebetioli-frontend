@@ -13,6 +13,7 @@ import LandingPage from "views/LandingPage";
 import Login from "views/Login";
 import Obrigado from "views/obrigado/Obrigado";
 import ObrigadoCompra from "views/obrigado/ObrigadoCompra";
+import ObrigadoEspera from "views/obrigado/ObrigadoEspera";
 import ObrigadoPlanilha from "views/obrigado/ObrigadoPlanilha";
 import Planilha from "views/Planilha";
 import * as serviceWorker from "./serviceWorker";
@@ -39,7 +40,7 @@ const obrigado_curso_render = (props) => {
   if (today >= dates.pre_launch && today < dates.start) {
     return <PreLancamento />;
   } else {
-    return <Obrigado />;
+    return <ObrigadoEspera />;
   }
 };
 
