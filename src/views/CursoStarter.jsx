@@ -7,14 +7,9 @@ import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
 
 class CursoStarter extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
   render() {
     return (
-      <div ref="main">
+      <div>
         <MetaTags>
           <title>Aulas gratuitas de impressão 3D - Alexandre Betioli</title>
           <meta
@@ -28,9 +23,17 @@ class CursoStarter extends React.Component {
           <Container>
             <Row>
               <Col lg="6">
-                <h1>Curso <span className="text-primary">STARTER</span> de Impressão 3D</h1>
+                <h1>
+                  Curso <span className="text-primary">STARTER</span> de
+                  impressão 3D
+                </h1>
                 <p className="lead">
-                  Estou preparando um <span className="text-primary">super curso para iniciantes</span> na impressão 3D e vai ser <span className="">totalmente gratuito</span>.
+                  Estou preparando um{" "}
+                  <span className="text-primary">
+                    super curso para iniciantes
+                  </span>{" "}
+                  na impressão 3D e vai ser{" "}
+                  <span className="">totalmente gratuito</span>.
                 </p>
                 <p>
                   Cadastre-se para ser avisado quando o curso estiver
@@ -49,7 +52,11 @@ class CursoStarter extends React.Component {
                 </form>
               </Col>
               <Col lg="6" className="centered">
-                <img alt="..." src={require("assets/img/starter.png")} className="hero-img" />
+                <img
+                  alt="..."
+                  src={require("assets/img/starter.png")}
+                  className="hero-img"
+                />
               </Col>
             </Row>
           </Container>

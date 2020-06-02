@@ -1,3 +1,7 @@
+html {
+  background-color: black;
+}
+
 .btn-login {
   border: none;
 
@@ -50,7 +54,11 @@
   color: white;
 
   h1,
-  h2 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: white;
   }
 }
@@ -81,7 +89,6 @@ h6 {
   color: rgb(75, 75, 75);
   font-weight: bold;
 }
-
 
 .navbar-dark {
   background-color: black;
@@ -223,9 +230,7 @@ iframe {
 
 p {
   font-size: 17px;
-  line-height: 32px;
   font-weight: 400;
-  text-align: justify;
 }
 
 .lead {
@@ -236,4 +241,52 @@ p {
 
 .text-primary {
   font-weight: 800;
+}
+
+.thumb-video {
+  width: 100px;
+}
+
+a {
+  color: white;
+}
+
+.video {
+  width: 100%;
+  margin: var(--space);
+  text-align: center;
+}
+
+.active {
+  color: $primary;
+}
+
+iframe {
+  width: 100%;
+}
+
+.legenda-video {
+  display: block;
+}
+
+.btn-checkout {
+  color: white;
+  background-color: $checkout;
+
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
+
+.btn-faq {
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+
+.vertical-timeline-element-content,
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle {
+  color: black !important;
 }

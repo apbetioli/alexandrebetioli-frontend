@@ -14,7 +14,6 @@ class MenuItem extends React.Component {
             id={this.props.id}
           >
             <i className={this.props.icon} />
-            &nbsp;
             <span
               className={"nav-link-inner--text ml-2 " + this.props.textClass}
             >

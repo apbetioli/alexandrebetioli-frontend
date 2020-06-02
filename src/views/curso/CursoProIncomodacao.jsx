@@ -9,11 +9,11 @@ class CursoProIncomodacao extends React.Component {
   render() {
     return (
       <div>
-        <Header/>
-        <section className="section black centered">
+        <Header />
+        <section className="section black">
           <Container>
             <Row>
-              <Col lg="12">
+              <Col lg="6">
                 <h1>
                   Crie seu <span className="text-primary">negócio online</span>{" "}
                   de impressão 3D
@@ -22,10 +22,14 @@ class CursoProIncomodacao extends React.Component {
                   Treinamento para quem não tem tempo a perder e quer
                   <span className="text-primary">
                     {" "}
-                    começar a lucrar com impressão 3D
+                    começar a lucrar
+                    {" "}
                   </span>
+                  com impressão 3D
                 </p>
-                <p>Digite seu email para ter acesso aos vídeos</p>
+                <p>
+                  Digite seu email para ter acesso aos vídeos
+                </p>
 
                 <form
                   action="https://app.convertkit.com/forms/1327091/subscriptions"
@@ -33,6 +37,13 @@ class CursoProIncomodacao extends React.Component {
                 >
                   <EmailForm buttonText="Clique para assistir" />
                 </form>
+              </Col>
+              <Col lg="6">
+                <img
+                  alt="..."
+                  src={require("assets/img/factory.jpg")}
+                  className="hero-img"
+                />
               </Col>
             </Row>
           </Container>

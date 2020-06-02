@@ -2,24 +2,30 @@ import React from "react";
 import { MetaTags } from "react-meta-tags";
 import CursoProEspera from "./curso/CursoProEspera";
 import CursoProIncomodacao from "./curso/CursoProIncomodacao";
+import Lancamento from "./lancamento/Lancamento";
 
 class CursoPro extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
-
   render() {
-    let page;
-    if (new Date() < new Date("2020-06-05 08:00:00")) {
-      page = <CursoProEspera />;
-    } else {
+    let today = new Date();
+
+    let page = <CursoProEspera />;
+
+    if (
+      today >= new Date("2020-06-05 08:00:00") &&
+      today < new Date("2020-06-08 08:00:00")
+    ) {
       page = <CursoProIncomodacao />;
     }
 
+    if (
+      today >= new Date("2020-06-08 08:00:00") &&
+      today < new Date("2020-06-15 00:00:00")
+    ) {
+      page = <Lancamento />;
+    }
+
     return (
-      <div ref="main">
+      <div>
         <MetaTags>
           <title>
             Crie seu negócio online de impressão 3D - Alexandre Betioli

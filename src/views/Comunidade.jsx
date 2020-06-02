@@ -5,14 +5,9 @@ import { MetaTags } from "react-meta-tags";
 import { Button, Col, Container, Row } from "reactstrap";
 
 class Comunidade extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
   render() {
     return (
-      <div ref="main">
+      <div>
         <MetaTags>
           <title>Comunidade AB3D - Alexandre Betioli</title>
           <meta

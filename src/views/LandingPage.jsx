@@ -7,14 +7,9 @@ import MetaTags from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
 
 class LandingPage extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
   render() {
     return (
-      <div ref="main">
+      <div>
         <MetaTags>
           <title>Impressão 3D - Alexandre Betioli</title>
           <meta
@@ -28,7 +23,9 @@ class LandingPage extends React.Component {
           <Container className="hero">
             <Row>
               <Col lg="6">
-                <h1><span>Impressão 3D</span> direto ao ponto e do jeito certo</h1>
+                <h1>
+                  <span>Impressão 3D</span> direto ao ponto e do jeito certo
+                </h1>
                 <p className="lead">
                   No meio de tanta informação que surge todos os dias, você
                   precisa de alguém que te leve na direção certa.
@@ -51,12 +48,12 @@ class LandingPage extends React.Component {
             <Row>
               <Col lg="6">
                 <h2>
-                <i className="fa fa-user-graduate" />
+                  <i className="fa fa-user-graduate" />
                   <span> Starter</span>
                 </h2>
                 <p>
-                  Curso 100% online para você dar os primeiros passos. 
-                  E o melhor, de graça!
+                  Curso 100% online para você dar os primeiros passos. E o
+                  melhor, de graça!
                 </p>
                 <ActionButton text="Garantir meu acesso" to="/starter" />
               </Col>
@@ -66,7 +63,8 @@ class LandingPage extends React.Component {
                   <span> 3D Commerce</span>
                 </h2>
                 <p>
-                  Para quem quer dar o próximo passo e começar a lucrar com esta tecnologia.
+                  Para quem quer dar o próximo passo e começar a lucrar com esta
+                  tecnologia.
                 </p>
                 <ActionButton text="Reservar minha vaga" to="/curso" />
               </Col>
@@ -110,7 +108,9 @@ class LandingPage extends React.Component {
                   <i className="fa fa-envelope" />
                   <span> Newsletter</span>
                 </h2>
-                <p className="lead">Receba notificações de novidades e conteúdos exclusivos.</p>
+                <p className="lead">
+                  Receba notificações de novidades e conteúdos exclusivos.
+                </p>
                 <p>Prometemos não enviar spam!</p>
 
                 <form

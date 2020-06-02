@@ -6,14 +6,9 @@ import { MetaTags } from "react-meta-tags";
 import { Card, CardBody, CardImg, Col, Container, Row } from "reactstrap";
 
 class Planilha extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
   render() {
     return (
-      <div ref="main">
+      <div>
         <MetaTags>
           <title>Impressão 3D - Alexandre Betioli</title>
           <meta
