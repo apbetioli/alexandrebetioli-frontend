@@ -2,34 +2,25 @@ import React, {Component} from 'react';
 import FacebookButton from 'react-facebook-login';
 
 export default class FacebookLogin extends Component {
-    state = {
-        auth: false,
-        name: '',
-        email: '',
-        picture: ''
-    };
 
-    componentClicked = () => console.log('Click');
     responseFacebook = response => {
         console.log(response);
         if (response.status !== 'unknown')
-            this.setState({
-                auth: true,
-                name: response.name,
-                picture: response.picture.data.url,
-                email:response.email
-            })
+            localStorage.setItem('userLogged', JSON.stringify({ auth: true, name: response.name, picture: response.picture.data.url, email:response.email }));
+            
+        window.location.reload();
     }
 
     render(){
         let facebookData;
+        const user = JSON.parse(localStorage.getItem('userLogged'));
 
-        this.state.auth ?
+        user && user.auth ?
             facebookData = (
                 <div>
-                    <img src={this.state.picture} alt={this.state.name} />
-                    <h2>Welcome {this.state.name}</h2>
-                    <h2>{this.state.email}</h2>
+                    <img src={user.picture} alt={user.name} />
+                    <h2>Welcome {user.name}</h2>
+                    <h2>{user.email}</h2>
                 </div>
             ) :
             facebookData = (
@@ -37,7 +28,6 @@ export default class FacebookLogin extends Component {
                 <FacebookButton
                     appId="769530983584123"
                     fields="name,email,picture"
-                    onClick={this.componentClicked}
                     callback={this.responseFacebook}
                     size="small" 
                     icon="fa-facebook"
