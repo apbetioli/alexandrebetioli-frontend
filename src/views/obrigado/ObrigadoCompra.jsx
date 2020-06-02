@@ -26,10 +26,6 @@ class ObrigadoCompra extends React.Component {
                 </p>
                 <br />
                 <p>
-                  Você deu o primeiro passo rumo ao domínio desta tecnologia
-                  incrível.{" "}
-                </p>
-                <p>
                   Em alguns minutos você receberá em seu email o acesso ao
                   curso, se você pagou por cartão de crédito.
                 </p>

@@ -10,6 +10,7 @@ import BrightnessLow from "@material-ui/icons/BrightnessLow";
 
 class Bonus extends React.Component {
   render() {
+    let iconStyle = { background: "rgb(0, 197, 108)", color: "#fff" };
     return (
       <Container>
         <Row>
@@ -17,9 +18,9 @@ class Bonus extends React.Component {
             <h2 className="centered">Bônus imperdíveis</h2>
           </Col>
           <Col lg="12">
-            <VerticalTimeline>
+            <VerticalTimeline animate={false}>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(0, 197, 108)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessLow />}
               >
                 <h3 className="vertical-timeline-element-title">Marketplace</h3>
@@ -29,7 +30,7 @@ class Bonus extends React.Component {
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(0, 197, 108)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessHigh />}
               >
                 <h3 className="vertical-timeline-element-title">
@@ -41,17 +42,17 @@ class Bonus extends React.Component {
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(0, 197, 108)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessLow />}
               >
                 <h3 className="vertical-timeline-element-title">Comunidade</h3>
                 <p>
                   Você terá acesso à uma comunidade com minha equipe e outros
-                  alunas para tirar dúvidas e compartilhar experiências.
+                  alunos para tirar dúvidas e compartilhar experiências.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(0, 197, 108)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessLow />}
               >
                 <h3 className="vertical-timeline-element-title">
@@ -64,7 +65,7 @@ class Bonus extends React.Component {
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(0, 197, 108)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessHigh />}
               >
                 <h3 className="vertical-timeline-element-title">

@@ -21,7 +21,7 @@ class Testemunhos extends React.Component {
           </Col>
         </Row>
         <Row>
-          <Col lg="4">
+          <Col>
             <Card>
               <CardBody>
                 <CardText>
@@ -33,7 +33,7 @@ class Testemunhos extends React.Component {
               <CardFooter>Adriano Barros</CardFooter>
             </Card>
           </Col>
-          <Col lg="4">
+          <Col>
             <Card>
               <CardBody>
                 <CardText>
@@ -45,7 +45,7 @@ class Testemunhos extends React.Component {
               <CardFooter>Flavio Cesar de Almeida Santos</CardFooter>
             </Card>
           </Col>
-          <Col lg="4">
+          <Col>
             <Card>
               <CardBody>
                 <CardText>
@@ -57,7 +57,21 @@ class Testemunhos extends React.Component {
               <CardFooter>Wilian Sandrini</CardFooter>
             </Card>
           </Col>
-          <Col lg="4">
+          <Col>
+            <Card>
+              <CardBody>
+                <CardText>
+                  Mostra um grande conhecimento do assunto e facilidade de
+                  repassar esse conhecimento
+                </CardText>
+              </CardBody>
+              <CardFooter>Ismael de Azevedo Moura</CardFooter>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <br />
             <Card>
               <CardBody>
                 <CardText>
@@ -72,31 +86,6 @@ class Testemunhos extends React.Component {
                 </CardText>
               </CardBody>
               <CardFooter>Eduardo José Rogério Nunes</CardFooter>
-            </Card>
-          </Col>
-          <Col lg="4">
-            <Card>
-              <CardBody>
-                <CardText>
-                  Mostra um grande conhecimento do assunto e facilidade de
-                  repassar esse conhecimento
-                </CardText>
-              </CardBody>
-              <CardFooter>Ismael de Azevedo Moura</CardFooter>
-            </Card>
-          </Col>
-          <Col lg="4">
-            <Card>
-              <CardBody>
-                <CardText>
-                  "Vi duas lives suas, uma sobre seu início na impressão 3D,
-                  muito interessante pois mostrou a evolução de objetivos,
-                  principalmente na transformação comercial e a outra sobre o
-                  software Prusa Slicer, bem explicado e demonstrado com os
-                  principais parâmetros."
-                </CardText>
-              </CardBody>
-              <CardFooter>Frederico Bellose</CardFooter>
             </Card>
           </Col>
         </Row>

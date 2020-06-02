@@ -1,15 +1,16 @@
+import BrightnessHigh from "@material-ui/icons/BrightnessHigh";
+import BrightnessLow from "@material-ui/icons/BrightnessLow";
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import BrightnessHigh from "@material-ui/icons/BrightnessHigh";
-import BrightnessLow from "@material-ui/icons/BrightnessLow";
+import { Col, Container, Row } from "reactstrap";
 
 class Conteudo extends React.Component {
   render() {
+    let iconStyle = { background: "rgb(33, 150, 243)", color: "#fff" };
     return (
       <Container>
         <Row>
@@ -17,9 +18,9 @@ class Conteudo extends React.Component {
             <h2 className="centered">Conteúdo do curso</h2>
           </Col>
           <Col lg="12">
-            <VerticalTimeline>
+            <VerticalTimeline animate={false}>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessLow />}
               >
                 <h3 className="vertical-timeline-element-title">
@@ -32,7 +33,7 @@ class Conteudo extends React.Component {
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessHigh />}
               >
                 <h3 className="vertical-timeline-element-title">
@@ -44,7 +45,7 @@ class Conteudo extends React.Component {
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessLow />}
               >
                 <h3 className="vertical-timeline-element-title">
@@ -56,7 +57,7 @@ class Conteudo extends React.Component {
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessLow />}
               >
                 <h3 className="vertical-timeline-element-title">
@@ -68,7 +69,7 @@ class Conteudo extends React.Component {
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessHigh />}
               >
                 <h3 className="vertical-timeline-element-title">
@@ -80,7 +81,7 @@ class Conteudo extends React.Component {
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessHigh />}
               >
                 <h3 className="vertical-timeline-element-title">
@@ -91,11 +92,12 @@ class Conteudo extends React.Component {
                   online. Você vai aprender passo a passo como a criar sua loja
                   virtual para vendas em redes sociais, tudo sobre vender em
                   marketplaces e como criar o seu próprio e-commerce com
-                  domínio, meios de pagamento e tudo mais.
+                  domínio, meios de pagamento e tudo mais. Tudo isso sem
+                  precisar saber programação.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
-                iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+                iconStyle={iconStyle}
                 icon={<BrightnessLow />}
               >
                 <h3 className="vertical-timeline-element-title">

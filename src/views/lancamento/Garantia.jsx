@@ -6,9 +6,8 @@ class Garantia extends React.Component {
     return (
       <Container>
         <Row>
-          <Col lg="3">
+          <Col lg="3" className="garantia">
             <img
-              className="hero-img"
               alt="..."
               src={require("assets/img/garantia2.png")}
             />

@@ -12,6 +12,22 @@ import Testemunhos from "./Testemunhos";
 
 class Lancamento extends React.Component {
   render() {
+    let cta = (
+      <Container>
+        <Row>
+          <Col lg="12">
+            <ActionButton
+              color="checkout"
+              href="https://pay.hotmart.com/Q23252637E?split=12"
+              text="Quero fazer minha matrícula agora"
+              size="lg"
+              block
+            />
+          </Col>
+        </Row>
+      </Container>
+    );
+
     return (
       <div>
         <ReactTitle title="Crie seu negócio online de impressão 3D - Alexandre Betioli" />
@@ -31,17 +47,9 @@ class Lancamento extends React.Component {
                   ></iframe>
                 </div>
               </Col>
-              <Col lg="12">
-                <ActionButton
-                  color="checkout"
-                  href="https://pay.hotmart.com/Q23252637E?split=12"
-                  text="Quero fazer minha matrícula"
-                  size="lg"
-                  block
-                />
-              </Col>
             </Row>
           </Container>
+          {cta}
         </section>
 
         <section className="section black">
@@ -90,20 +98,6 @@ class Lancamento extends React.Component {
 
         <section className="section">
           <FAQs />
-
-          <Container>
-            <Row>
-              <Col lg="12">
-                <ActionButton
-                  color="checkout"
-                  href="https://pay.hotmart.com/Q23252637E?split=12"
-                  text="Quero fazer minha matrícula agora"
-                  size="lg"
-                  block
-                />
-              </Col>
-            </Row>
-          </Container>
         </section>
 
         <section className="section">

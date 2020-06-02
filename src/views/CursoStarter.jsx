@@ -28,12 +28,8 @@ class CursoStarter extends React.Component {
                   impressão 3D
                 </h1>
                 <p className="lead">
-                  Estou preparando um{" "}
-                  <span className="text-primary">
-                    super curso para iniciantes
-                  </span>{" "}
-                  na impressão 3D e vai ser{" "}
-                  <span className="">totalmente gratuito</span>.
+                  Estou preparando um super curso para iniciantes na impressão
+                  3D e vai ser <span className="text-primary">totalmente gratuito</span>.
                 </p>
                 <p>
                   Cadastre-se para ser avisado quando o curso estiver
