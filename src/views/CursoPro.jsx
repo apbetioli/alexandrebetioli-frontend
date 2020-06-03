@@ -34,10 +34,9 @@ class CursoPro extends React.Component {
                   lucrar com impressão 3D
                 </p>
                 <p>
-                  As matrículas serão abertas em breve dia{" "}
-                  <span className="text-primary">15/05 às 8h</span>. Não perca
-                  tempo e se cadastre para receber mais informações sobre o
-                  curso.
+                  As matrículas serão abertas em breve, no dia{" "}
+                  <span className="text-primary">15/05</span>. Não perca tempo e
+                  se cadastre agora para receber mais informações sobre o curso.
                 </p>
 
                 <form

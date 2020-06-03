@@ -21,19 +21,6 @@ class Conteudo extends React.Component {
             <VerticalTimeline animate={false}>
               <VerticalTimelineElement
                 iconStyle={iconStyle}
-                icon={<BrightnessLow />}
-              >
-                <h3 className="vertical-timeline-element-title">
-                  Introdução à impressão 3D
-                </h3>
-                <p>
-                  Para quem nunca teve contato com a impressão 3D e quer começar
-                  com o pé direito, vou ensinar como escolher uma impressora 3D
-                  e te guiar até a sua primeira impressão.
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                iconStyle={iconStyle}
                 icon={<BrightnessHigh />}
               >
                 <h3 className="vertical-timeline-element-title">

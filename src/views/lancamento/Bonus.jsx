@@ -1,12 +1,9 @@
-import React from "react";
-import { Col, Container, Row } from "reactstrap";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import BrightnessHigh from "@material-ui/icons/BrightnessHigh";
 import BrightnessLow from "@material-ui/icons/BrightnessLow";
+import React from "react";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { Col, Container, Row } from "reactstrap";
 
 class Bonus extends React.Component {
   render() {
@@ -23,10 +20,13 @@ class Bonus extends React.Component {
                 iconStyle={iconStyle}
                 icon={<BrightnessLow />}
               >
-                <h3 className="vertical-timeline-element-title">Marketplace</h3>
+                <h3 className="vertical-timeline-element-title">
+                  Introdução à impressão 3D
+                </h3>
                 <p>
-                  Vou conectar você com seu cliente através do meu marketplace.
-                  E todo o marketing é por minha conta!
+                  Para quem nunca teve contato com a impressão 3D e quer começar
+                  com o pé direito, vou ensinar como escolher uma impressora 3D
+                  e te guiar até a sua primeira impressão.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -37,8 +37,18 @@ class Bonus extends React.Component {
                   Acompanhamento
                 </h3>
                 <p>
-                  Vou fazer uma análise individual do seu negócio e ajudar você
-                  a seguir na direção certa!
+                  Vou fazer uma acompanhamento individual do seu negócio e
+                  ajudar você a seguir na direção certa!
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                iconStyle={iconStyle}
+                icon={<BrightnessLow />}
+              >
+                <h3 className="vertical-timeline-element-title">Marketplace</h3>
+                <p>
+                  Vou conectar você com seu cliente através do meu marketplace.
+                  E todo o marketing é por minha conta!
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -51,6 +61,7 @@ class Bonus extends React.Component {
                   alunos para tirar dúvidas e compartilhar experiências.
                 </p>
               </VerticalTimelineElement>
+
               <VerticalTimelineElement
                 iconStyle={iconStyle}
                 icon={<BrightnessLow />}

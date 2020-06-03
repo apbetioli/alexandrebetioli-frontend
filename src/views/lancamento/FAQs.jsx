@@ -1,5 +1,13 @@
 import React from "react";
-import { Button, Card, CardBody, Col, Container, Row, UncontrolledCollapse } from "reactstrap";
+import {
+  Button,
+  Card,
+  CardBody,
+  Col,
+  Container,
+  Row,
+  UncontrolledCollapse,
+} from "reactstrap";
 
 class FAQ extends React.Component {
   render() {
@@ -32,11 +40,6 @@ class FAQs extends React.Component {
           <Col lg="12">
             <h3 className="centered">F.A.Q. - PERGUNTAS FREQUENTES</h3>
           </Col>
-          <FAQ id="q1" question="Como será entregue?">
-            É um curso online e em vídeo, disponibilizado através de uma
-            plataforma especializada em ensino à distância. As aulas e os
-            módulos são liberados ao longo dos 3 meses iniciais.
-          </FAQ>
           <FAQ id="q2" question="Pra quem é esse curso?">
             Este curso é para quem quer começar a ter uma renda com impressão
             3D.
@@ -48,9 +51,11 @@ class FAQs extends React.Component {
             impressora, está tudo pronto!
           </FAQ>
           <FAQ id="q4" question="Por quanto tempo vou ter acesso?">
-            Você terá acesso vitalício ao curso e poderá voltar a ele sempre que
-            precisar consultar. Também terá direito a atualizações do método sem
-            nenhum custo adicional.
+            O tempo que for necessário. Não seria algo verdadeiro eu dizer que é
+            pra sempre, pois a tecnologia muda a todo momento, e a qualquer
+            momento a plataforma do curso pode mudar ou sair do ar. Mas fique
+            tranquilo pois em qualquer situação destas você poderá baixar todo o
+            conteúdo e guardar no seu computador pra sempre.
           </FAQ>
           <FAQ id="q5" question="O curso emite certificado?">
             Sim ao término do curso você irá receber o certificado de conclusão
@@ -59,6 +64,11 @@ class FAQs extends React.Component {
           <FAQ id="q6" question="Como posso tirar minhas dúvidas?">
             Cada aula possui uma área para dúvidas na plataforma de conteúdo e
             você também poderá tirar dúvidas no grupo exclusivo da turma.
+          </FAQ>
+          <FAQ id="q1" question="Como será entregue?">
+            É um curso online e em vídeo, disponibilizado através de uma
+            plataforma especializada em ensino à distância. As aulas e os
+            módulos são liberados ao longo dos 3 meses iniciais.
           </FAQ>
           <FAQ id="q7" question="Quais são os horários das aulas? ">
             O curso será gravado e você poderá assistir a qualquer momento que

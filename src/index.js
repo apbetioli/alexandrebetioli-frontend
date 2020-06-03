@@ -55,6 +55,7 @@ ReactDOM.render(
         <Route path="/planilha" exact component={Planilha} />
         <Route path="/pl" exact component={PreLancamento} />} />
         <Route path="/matriculas-abertas" exact render={curso_render} />
+        <Route path="/lancamento" exact component={Lancamento} />
         <Route path="/login" exact component={Login} />
         <Route path="/obrigado-starter" exact component={Obrigado} />
         <Route path="/obrigado-planilha" exact component={ObrigadoPlanilha} />
