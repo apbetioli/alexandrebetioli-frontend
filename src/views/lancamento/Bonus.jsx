@@ -18,24 +18,11 @@ class Bonus extends React.Component {
             <VerticalTimeline animate={false}>
               <VerticalTimelineElement
                 iconStyle={iconStyle}
-                icon={<BrightnessLow />}
-              >
-                <h3 className="vertical-timeline-element-title">
-                  Introdução à impressão 3D
-                </h3>
-                <p>
-                  Para quem nunca teve contato com a impressão 3D e quer começar
-                  com o pé direito, vou ensinar como escolher uma impressora 3D
-                  e te guiar até a sua primeira impressão.
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                iconStyle={iconStyle}
                 icon={<BrightnessHigh />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h4 className="vertical-timeline-element-title">
                   Acompanhamento
-                </h3>
+                </h4>
                 <p>
                   Vou fazer uma acompanhamento individual do seu negócio e
                   ajudar você a seguir na direção certa!
@@ -45,17 +32,17 @@ class Bonus extends React.Component {
                 iconStyle={iconStyle}
                 icon={<BrightnessLow />}
               >
-                <h3 className="vertical-timeline-element-title">Marketplace</h3>
+                <h4 className="vertical-timeline-element-title">Marketplace</h4>
                 <p>
-                  Vou conectar você com seu cliente através do meu marketplace.
+                  Vou conectar você com seu clientes através do meu marketplace.
                   E todo o marketing é por minha conta!
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 iconStyle={iconStyle}
-                icon={<BrightnessLow />}
+                icon={<BrightnessHigh />}
               >
-                <h3 className="vertical-timeline-element-title">Comunidade</h3>
+                <h4 className="vertical-timeline-element-title">Comunidade</h4>
                 <p>
                   Você terá acesso à uma comunidade com minha equipe e outros
                   alunos para tirar dúvidas e compartilhar experiências.
@@ -66,25 +53,13 @@ class Bonus extends React.Component {
                 iconStyle={iconStyle}
                 icon={<BrightnessLow />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h4 className="vertical-timeline-element-title">
                   Como ser super eficiente
-                </h3>
+                </h4>
                 <p>
                   Vou ensinar como você pode automatizar partes da sua produção
                   para ganhar tempo. E também como criar e gerenciar uma micro
                   fazenda de impressão.
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                iconStyle={iconStyle}
-                icon={<BrightnessHigh />}
-              >
-                <h3 className="vertical-timeline-element-title">
-                  Outras oportunidades
-                </h3>
-                <p>
-                  Além de e-commerce há muitas outras oportunidades na impressão
-                  3D que eu vou explorar neste material.
                 </p>
               </VerticalTimelineElement>
             </VerticalTimeline>

@@ -1,5 +1,9 @@
-import BrightnessHigh from "@material-ui/icons/BrightnessHigh";
-import BrightnessLow from "@material-ui/icons/BrightnessLow";
+import BatteryCharging20Icon from "@material-ui/icons/BatteryCharging20";
+import BatteryCharging30Icon from "@material-ui/icons/BatteryCharging30";
+import BatteryCharging50Icon from "@material-ui/icons/BatteryCharging50";
+import BatteryCharging60Icon from "@material-ui/icons/BatteryCharging60";
+import BatteryCharging80Icon from "@material-ui/icons/BatteryCharging80";
+import BatteryChargingFullIcon from "@material-ui/icons/BatteryChargingFull";
 import React from "react";
 import {
   VerticalTimeline,
@@ -21,23 +25,23 @@ class Conteudo extends React.Component {
             <VerticalTimeline animate={false}>
               <VerticalTimelineElement
                 iconStyle={iconStyle}
-                icon={<BrightnessHigh />}
+                icon={<BatteryCharging20Icon />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h4 className="vertical-timeline-element-title">
                   Empreendedorismo
-                </h3>
+                </h4>
                 <p>
-                  Vou dar uma aula sobre os requisitos necessários para ser um
+                  Conheça e internalize os requisitos necessários para ser um
                   empreendedor de sucesso.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 iconStyle={iconStyle}
-                icon={<BrightnessLow />}
+                icon={<BatteryCharging30Icon />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h4 className="vertical-timeline-element-title">
                   Como definir o que vender
-                </h3>
+                </h4>
                 <p>
                   Vou ajudar a você definir o que vender, pra quem vender e como
                   obter modelos para impressão que possam ser vendidos
@@ -45,11 +49,11 @@ class Conteudo extends React.Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 iconStyle={iconStyle}
-                icon={<BrightnessLow />}
+                icon={<BatteryCharging50Icon />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h4 className="vertical-timeline-element-title">
                   Como definir o seu preço de venda
-                </h3>
+                </h4>
                 <p>
                   Vou ensinar como fazer o cálculo correto do preço do seu
                   produto para você ter lucro de verdade com a venda.
@@ -57,23 +61,24 @@ class Conteudo extends React.Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 iconStyle={iconStyle}
-                icon={<BrightnessHigh />}
+                icon={<BatteryCharging60Icon />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h4 className="vertical-timeline-element-title">
                   Como encontrar clientes
-                </h3>
+                </h4>
                 <p>
                   Além de ter o seu produto você precisa de quem o compre, para
-                  isso vou te ensinar como encontrar o seu cliente.
+                  isso vou te ensinar como encontrar o seu cliente. Aqui
+                  usaremos técnicas de marketing na prática.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 iconStyle={iconStyle}
-                icon={<BrightnessHigh />}
+                icon={<BatteryCharging80Icon />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h4 className="vertical-timeline-element-title">
                   Presença online
-                </h3>
+                </h4>
                 <p>
                   Neste módulo eu vou te ensinar como estabelecer sua presença
                   online. Você vai aprender passo a passo como a criar sua loja
@@ -85,11 +90,11 @@ class Conteudo extends React.Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 iconStyle={iconStyle}
-                icon={<BrightnessLow />}
+                icon={<BatteryChargingFullIcon />}
               >
-                <h3 className="vertical-timeline-element-title">
+                <h4 className="vertical-timeline-element-title">
                   Venda online
-                </h3>
+                </h4>
                 <p>
                   Como gerenciar as suas vendas, estoque, produção. Como
                   economizar tempo e dinheiro com frete.

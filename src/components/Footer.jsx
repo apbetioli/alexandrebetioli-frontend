@@ -61,6 +61,11 @@ class Footer extends React.Component {
           )}
           <Container>
             <Row>
+              <Col lg="12" className="centered">
+                <a className="footer-link" href="mailto:contato@alexandrebetioli.com.br">Contato</a>
+              </Col>
+            </Row>
+            <Row>
               <Col lg="12">
                 <div className="copyright">
                   © {new Date().getFullYear()} - Alexandre Betioli

@@ -2,14 +2,14 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
 import { MetaTags } from "react-meta-tags";
-import { Button, Col, Container, Row } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 
 class Comunidade extends React.Component {
   render() {
     return (
       <div>
         <MetaTags>
-          <title>Comunidade AB3D - Alexandre Betioli</title>
+          <title>Comunidade 3D COMMERCE - Alexandre Betioli</title>
           <meta
             name="description"
             content="Participe da comunidade e acelere seu aprendizado interajindo com outros profissionais do mercado de impressão 3D."
@@ -20,50 +20,25 @@ class Comunidade extends React.Component {
         <section className="section comunidade">
           <Container>
             <Row>
-              <Col lg="6">
-                <h1>Comunidade AB3D</h1>
+              <Col lg="8">
+                <h1>Comunidade 3D COMMERCE</h1>
 
                 <p className="lead">
                   Acelere o seu aprendizado. Tire suas dúvidas e interaja com
                   outros profissionais do mercado de impressão 3D.
                 </p>
-
-                <Button
-                  color="primary"
-                  href="https://discord.gg/sVXPeBn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Acessar comunidade
-                </Button>
               </Col>
-              <Col lg="6" className="centered discord">
+              <Col lg="4" className="centered discord">
                 <img alt="..." src={require("assets/img/discord.png")} />
               </Col>
               <Col lg="12">
                 <h2>Sobre a comunidade</h2>
 
                 <p>
-                  A comunidade AB3D foi criada com o objetivo principal de
-                  reunir pessoas com um mesmo interesse: <br />
-                  <strong> Impressão 3D</strong>.
-                </p>
-                <p>
-                  Ela oferece uma forma organizada de conectar as pessoas para
-                  que possam trocar experiências e evoluir no aprendizado da
-                  impressão 3D e tecnologias afins.
-                </p>
-                <p>
-                  Qualquer um pode participar, desde que respeite as regras da
-                  comunidade. Para participar basta{" "}
-                  <a
-                    href="https://discord.gg/sVXPeBn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    acessar clicando aqui
-                  </a>
-                  . Você só precisará criar uma conta no Discord.
+                  A comunidade 3D COMMERCE oferece uma forma organizada de para
+                  tirar dúvidas e conectar as pessoas para que possam trocar
+                  experiências e evoluir no aprendizado do uso da impressão 3D
+                  nos negócios.
                 </p>
 
                 <h2>Organização</h2>
@@ -77,6 +52,10 @@ class Comunidade extends React.Component {
                     <strong>#boas-vindas</strong> - Canal somente leitura com
                     informações importantes para quem acaba de entrar na
                     comunidade.
+                  </li>
+                  <li>
+                    <strong>#avisos</strong> - Canal somente leitura quer será
+                    utilizado pela nossa equipe para postar avisos e anúncios.
                   </li>
                   <li>
                     <strong>#apresentações</strong> - Se apresente para a
@@ -107,8 +86,8 @@ class Comunidade extends React.Component {
                     modelagem sob encomenda entre outros.
                   </li>
                   <li>
-                    <strong>#avisos</strong> - Canal somente leitura quer será
-                    utilizado pela nossa equipe para postar avisos e anúncios.
+                    <strong>#comunidade</strong> - Este canal é para sugestões e
+                    feedback sobre a comunidade.
                   </li>
                 </ul>
                 <p>

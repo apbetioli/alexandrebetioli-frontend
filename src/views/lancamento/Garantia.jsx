@@ -7,19 +7,16 @@ class Garantia extends React.Component {
       <Container>
         <Row>
           <Col lg="3" className="garantia">
-            <img
-              alt="..."
-              src={require("assets/img/garantia2.png")}
-            />
+            <img alt="..." src={require("assets/img/garantia2.png")} />
           </Col>
           <Col lg="9">
             <br />
             <h3>Faça sua matrícula tranquila</h3>
             <p>
-              Se você seguir o método, colocar em prática, e em 30 dias achar
-              que não teve nenhuma evolução, ou que o curso não é para você, é
-              só mandar um e-mail e devolvemos todo o seu investimento, sem
-              perguntas.
+              Se dentro de 30 dias você decidir que o curso não é para você, não
+              teve nenhuma evolução ou não era o que você esperava, é só mandar
+              um e-mail e devolvemos 100% do seu investimento, sem perguntas.
+              Isso mesmo, sem perguntas.
             </p>
           </Col>
         </Row>

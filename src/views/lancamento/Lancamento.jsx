@@ -19,7 +19,7 @@ class Lancamento extends React.Component {
             <ActionButton
               color="checkout"
               href="https://pay.hotmart.com/Q23252637E?split=12"
-              text="Quero fazer minha matrícula agora"
+              text="Quero fazer minha matrícula"
               size="lg"
               block
             />
@@ -41,9 +41,7 @@ class Lancamento extends React.Component {
                     title="pl1"
                     className="embed-responsive-item"
                     src="https://www.youtube.com/embed/NKW25Kfw_JM"
-                    frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
                   ></iframe>
                 </div>
               </Col>
@@ -64,9 +62,7 @@ class Lancamento extends React.Component {
                 <p>
                   Vou ensinar você tudo o que aprendi no campo de batalha tendo
                   um e-commerce de impressão 3D. Você vai aprender como vender
-                  em redes sociais, marketplaces e no seu próprio e-commerce. E
-                  o melhor: sem cometer os mesmos erros que eu, deixar de vender
-                  e sem perder tempo.
+                  em redes sociais, marketplaces e no seu próprio e-commerce.
                 </p>
                 <p>
                   Coloque a sua impressora para aquecer pois ela vai trabalhar
@@ -98,6 +94,7 @@ class Lancamento extends React.Component {
 
         <section className="section">
           <FAQs />
+          {cta}
         </section>
 
         <section className="section">

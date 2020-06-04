@@ -21,7 +21,7 @@ class Testemunhos extends React.Component {
           </Col>
         </Row>
         <Row>
-          <Col>
+          <Col lg="6">
             <Card>
               <CardBody>
                 <CardText>
@@ -33,7 +33,7 @@ class Testemunhos extends React.Component {
               <CardFooter>Adriano Barros</CardFooter>
             </Card>
           </Col>
-          <Col>
+          <Col lg="6">
             <Card>
               <CardBody>
                 <CardText>
@@ -45,7 +45,7 @@ class Testemunhos extends React.Component {
               <CardFooter>Flavio Cesar de Almeida Santos</CardFooter>
             </Card>
           </Col>
-          <Col>
+          <Col lg="6">
             <Card>
               <CardBody>
                 <CardText>
@@ -57,7 +57,7 @@ class Testemunhos extends React.Component {
               <CardFooter>Wilian Sandrini</CardFooter>
             </Card>
           </Col>
-          <Col>
+          <Col lg="6">
             <Card>
               <CardBody>
                 <CardText>
