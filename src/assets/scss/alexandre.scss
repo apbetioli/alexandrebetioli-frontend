@@ -53,6 +53,10 @@ html {
   background-color: rgba(black, 1);
   color: white;
 
+  a {
+    color: white;
+  }
+
   h1,
   h2,
   h3,
@@ -245,10 +249,6 @@ p {
 
 .thumb-video {
   width: 100px;
-}
-
-a {
-  color: white;
 }
 
 .video {
