@@ -1,6 +1,5 @@
 import BatteryCharging20Icon from "@material-ui/icons/BatteryCharging20";
 import BatteryCharging30Icon from "@material-ui/icons/BatteryCharging30";
-import BatteryCharging50Icon from "@material-ui/icons/BatteryCharging50";
 import BatteryCharging60Icon from "@material-ui/icons/BatteryCharging60";
 import BatteryCharging80Icon from "@material-ui/icons/BatteryCharging80";
 import BatteryChargingFullIcon from "@material-ui/icons/BatteryChargingFull";
@@ -28,18 +27,6 @@ class Conteudo extends React.Component {
                 icon={<BatteryCharging20Icon />}
               >
                 <h4 className="vertical-timeline-element-title">
-                  Empreendedorismo
-                </h4>
-                <p>
-                  Conheça e internalize os requisitos necessários para ser um
-                  empreendedor de sucesso.
-                </p>
-              </VerticalTimelineElement>
-              <VerticalTimelineElement
-                iconStyle={iconStyle}
-                icon={<BatteryCharging30Icon />}
-              >
-                <h4 className="vertical-timeline-element-title">
                   Como definir o que vender
                 </h4>
                 <p>
@@ -49,7 +36,7 @@ class Conteudo extends React.Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 iconStyle={iconStyle}
-                icon={<BatteryCharging50Icon />}
+                icon={<BatteryCharging30Icon />}
               >
                 <h4 className="vertical-timeline-element-title">
                   Como definir o seu preço de venda
@@ -64,12 +51,12 @@ class Conteudo extends React.Component {
                 icon={<BatteryCharging60Icon />}
               >
                 <h4 className="vertical-timeline-element-title">
-                  Como encontrar clientes
+                  Como fazer o cliente encontrar você
                 </h4>
                 <p>
                   Além de ter o seu produto você precisa de quem o compre, para
-                  isso vou te ensinar como encontrar o seu cliente. Aqui
-                  usaremos técnicas de marketing na prática.
+                  isso vou te ensinar fazer seu cliente encontrar encontrar você. 
+                  Aqui usaremos técnicas de marketing na prática.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement

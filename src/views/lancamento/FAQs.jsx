@@ -1,5 +1,13 @@
 import React from "react";
-import { Button, Card, CardBody, Col, Container, Row, UncontrolledCollapse } from "reactstrap";
+import {
+  Button,
+  Card,
+  CardBody,
+  Col,
+  Container,
+  Row,
+  UncontrolledCollapse,
+} from "reactstrap";
 
 class FAQ extends React.Component {
   render() {
@@ -34,16 +42,14 @@ class FAQs extends React.Component {
           </Col>
           <FAQ id="q2" question="Pra quem é esse curso?">
             Este curso é para quem quer começar a ter uma renda com impressão
-            3D. Se você ainda não teve contato com a impressão 3D, o curso conta
-            com bônus de aulas introdutórias de impressão e como escolher sua
-            impressora para que você tenha tudo em mãos pra começar a vender.
+            3D.
           </FAQ>
           <FAQ id="q9" question="Preciso de uma impressora 3D?">
             Não necessariamente. O curso é focado no aspecto operacional do
-            negócio de impressão 3D. Uma impressora será necessária para criar
-            os produtos para a venda. Se você tiver uma parceria com alguém que
-            fará a impressão, você pode fazer o curso todo sem ter uma
-            impressora.
+            negócio de impressão 3D. Mas quando você for vender você precisará
+            de uma impressora para produzir. Caso você tenha dúvidas sobre qual
+            impressora adquirir, tem um vídeo no meu canal do YouTube falando só
+            sobre isso.
           </FAQ>
           <FAQ id="q10" question="Preciso saber modelagem 3D?">
             Não. Existem muitos modelos 3D grátis e pagos disponíveis em vários

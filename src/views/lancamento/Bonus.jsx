@@ -1,7 +1,10 @@
 import BrightnessHigh from "@material-ui/icons/BrightnessHigh";
 import BrightnessLow from "@material-ui/icons/BrightnessLow";
 import React from "react";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { Col, Container, Row } from "reactstrap";
 
