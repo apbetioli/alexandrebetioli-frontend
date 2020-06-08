@@ -47,9 +47,9 @@ class FAQs extends React.Component {
           <FAQ id="q9" question="Preciso de uma impressora 3D?">
             Não necessariamente. O curso é focado no aspecto operacional do
             negócio de impressão 3D. Mas quando você for vender você precisará
-            de uma impressora para produzir. Caso você tenha dúvidas sobre qual
-            impressora adquirir, tem um vídeo no meu canal do YouTube falando só
-            sobre isso.
+            de uma impressora para produzir ou você também pode terceirizar a
+            impressão. Caso você tenha dúvidas sobre qual impressora adquirir,
+            tem um vídeo no meu canal do YouTube falando só sobre isso.
           </FAQ>
           <FAQ id="q10" question="Preciso saber modelagem 3D?">
             Não. Existem muitos modelos 3D grátis e pagos disponíveis em vários
