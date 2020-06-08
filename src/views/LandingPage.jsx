@@ -113,16 +113,11 @@ class LandingPage extends React.Component {
                 </p>
                 <p>Prometemos não enviar spam!</p>
 
-                <form
-                  action="https://app.convertkit.com/forms/1377394/subscriptions"
-                  method="post"
-                  data-sv-form="1377394"
-                  data-uid="4c0c66ac49"
-                  data-version="5"
-                  data-options='{"settings":{"after_subscribe":{"action":"redirect","success_message":"Sucesso! Now check your email to confirm your subscription.","redirect_url":"https://alexandrebetioli.com.br/obrigado-news"},"analytics":{"google":null,"facebook":null,"segment":null,"pinterest":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":false,"url":"https://convertkit.com?utm_source=dynamic&amp;utm_medium=referral&amp;utm_campaign=poweredby&amp;utm_content=form"},"recaptcha":{"enabled":true},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
-                >
-                  <EmailForm buttonText="Fazer meu cadastro" />
-                </form>
+                <EmailForm
+                  formId="1377394"
+                  buttonText="Fazer meu cadastro"
+                  redirect="/obrigado-live"
+                />
               </Col>
             </Row>
           </Container>

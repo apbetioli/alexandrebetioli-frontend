@@ -20,7 +20,6 @@ class Header extends React.Component {
   render() {
     return (
       <>
-        <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
         <header className="header-global">
           <Navbar
             className="navbar-main navbar-dark"
