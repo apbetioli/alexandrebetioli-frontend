@@ -5,7 +5,8 @@ import { Button, Col, FormGroup, Input, InputGroup, InputGroupAddon, InputGroupT
 class EmailForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { email: "" };
+    let email = localStorage.getItem("email");
+    this.state = { email: email ? email : "" };
   }
 
   emailChanged(event) {
@@ -14,6 +15,7 @@ class EmailForm extends React.Component {
 
   onSubmit(event) {
     event.preventDefault();
+    localStorage.setItem('email', this.state.email); 
 
     const requestOptions = {
       method: "POST",
