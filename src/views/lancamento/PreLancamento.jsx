@@ -25,8 +25,7 @@ class PreLancamento extends React.Component {
           <iframe
             title="pl1"
             className="embed-responsive-item"
-            src="https://www.youtube.com/embed/yr_qDX8ljlE"
-            frameborder="0"
+            src="https://www.youtube.com/embed/Kxl4BPM0Zmo"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
