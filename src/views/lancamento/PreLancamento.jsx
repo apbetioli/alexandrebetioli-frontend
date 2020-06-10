@@ -12,11 +12,8 @@ class PreLancamento extends React.Component {
     this.refs.main.scrollTop = 0;
   }
   render() {
-    let pl1_date = new Date("2020-06-01 08:00:00");
-    let pl2_date = new Date("2020-06-14 08:00:00");
-
-    let pl1_liberado = new Date() >= pl1_date;
-    let pl2_liberado = new Date() >= pl2_date;
+    let pl1_liberado = new Date() >= this.props.dates.pl1;
+    let pl2_liberado = new Date() >= this.props.dates.pl2;
 
     let pl1_content;
     if (pl1_liberado) {
@@ -25,7 +22,7 @@ class PreLancamento extends React.Component {
           <iframe
             title="pl1"
             className="embed-responsive-item"
-            src="https://www.youtube.com/embed/Kxl4BPM0Zmo"
+            src="https://www.youtube.com/embed/l9Mi7w78Mig?rel=0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
@@ -48,7 +45,7 @@ class PreLancamento extends React.Component {
           <iframe
             title="pl1"
             className="embed-responsive-item"
-            src="https://www.youtube.com/embed/NKW25Kfw_JM"
+            src="https://www.youtube.com/embed/l9Mi7w78Mig?rel=0"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -91,7 +88,7 @@ class PreLancamento extends React.Component {
                         <span className="legenda-video">
                           {pl1_liberado
                             ? "LIBERADO"
-                            : format(pl1_date, "'Estréia' dd/MM 'às' HH'h'")}
+                            : format(this.props.dates.pl1, "'Estreia' dd/MM 'às' HH'h'")}
                         </span>
                       </p>
                     </Col>
@@ -117,7 +114,7 @@ class PreLancamento extends React.Component {
                         <span className="legenda-video">
                           {pl2_liberado
                             ? "LIBERADO"
-                            : format(pl2_date, "'Estréia' dd/MM 'às' HH'h'")}
+                            : format(this.props.dates.pl2, "'Estreia' dd/MM 'às' HH'h'")}
                         </span>
                       </p>
                     </Col>

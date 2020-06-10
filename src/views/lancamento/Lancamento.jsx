@@ -45,7 +45,7 @@ class Lancamento extends React.Component {
                   <iframe
                     title="pl1"
                     className="embed-responsive-item"
-                    src="https://www.youtube.com/embed/NKW25Kfw_JM"
+                    src="https://www.youtube.com/embed/NKW25Kfw_JM?rel=0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   ></iframe>
                 </div>

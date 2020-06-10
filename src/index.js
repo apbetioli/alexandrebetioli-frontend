@@ -24,7 +24,8 @@ import Planilha from "views/Planilha";
 import * as serviceWorker from "./serviceWorker";
 
 const dates = {
-  pre_launch: new Date("2020-06-12 08:00:00"),
+  pl1: new Date("2020-06-12 08:00:00"),
+  pl2: new Date("2020-06-14 20:00:00"),
   start: new Date("2020-06-15 08:00:00"),
   end: new Date("2020-06-22 00:00:00"),
 };
@@ -35,15 +36,15 @@ const curso_render = (props) => {
     return <Lancamento />;
   }
   if (today < dates.start || today >= dates.end) {
-    return <CursoPro />;
+    return <CursoPro {...props} dates={dates} />;
   }
 };
 
 const obrigado_curso_render = (props) => {
   let today = new Date();
 
-  if (today >= dates.pre_launch && today < dates.start) {
-    return <PreLancamento />;
+  if (today >= dates.pl1 && today < dates.start) {
+    return <PreLancamento {...props} active={"pl1"} dates={dates} />;
   } else {
     return <ObrigadoEspera />;
   }
@@ -58,7 +59,6 @@ ReactDOM.render(
         <Route path="/starter" exact component={CursoStarter} />
         <Route path="/comunidade" exact component={Comunidade} />
         <Route path="/planilha" exact component={Planilha} />
-        <Route path="/pl" exact component={PreLancamento} />} />
         <Route path="/matriculas-abertas" exact render={curso_render} />
         <Route path="/lancamento" exact component={Lancamento} />
         <Route path="/login" exact component={Login} />
@@ -72,12 +72,16 @@ ReactDOM.render(
         <Route
           path="/pl1"
           exact
-          render={(props) => <PreLancamento {...props} active={"pl1"} />}
+          render={(props) => (
+            <PreLancamento {...props} active={"pl1"} dates={dates} />
+          )}
         />
         <Route
           path="/pl2"
           exact
-          render={(props) => <PreLancamento {...props} active={"pl2"} />}
+          render={(props) => (
+            <PreLancamento {...props} active={"pl2"} dates={dates} />
+          )}
         />
         <Redirect to="/" />
       </Switch>
