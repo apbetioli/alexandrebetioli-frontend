@@ -13,7 +13,7 @@ class PreLancamento extends React.Component {
   }
   render() {
     let pl1_date = new Date("2020-06-01 08:00:00");
-    let pl2_date = new Date("2020-06-15 08:00:00");
+    let pl2_date = new Date("2020-06-14 08:00:00");
 
     let pl1_liberado = new Date() >= pl1_date;
     let pl2_liberado = new Date() >= pl2_date;
