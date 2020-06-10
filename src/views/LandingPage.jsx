@@ -7,9 +7,14 @@ import MetaTags from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
 
 class LandingPage extends React.Component {
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.refs.main.scrollTop = 0;
+  }
   render() {
     return (
-      <div>
+      <div ref="main">
         <MetaTags>
           <title>Impressão 3D - Alexandre Betioli</title>
           <meta

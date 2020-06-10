@@ -5,9 +5,14 @@ import { ReactTitle } from "react-meta-tags";
 import { Button, Card, CardBody, CardHeader, Col, Container, Form, FormGroup, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from "reactstrap";
 
 class Login extends React.Component {
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.refs.main.scrollTop = 0;
+  }
   render() {
     return (
-      <div>
+      <div ref="main">
         <ReactTitle title="Área de membros - Alexandre Betioli" />
 
         <Header />

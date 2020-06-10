@@ -6,6 +6,11 @@ import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 
 class PreLancamento extends React.Component {
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.refs.main.scrollTop = 0;
+  }
   render() {
     let pl1_date = new Date("2020-06-01 08:00:00");
     let pl2_date = new Date("2020-06-15 08:00:00");
@@ -62,7 +67,7 @@ class PreLancamento extends React.Component {
     }
 
     return (
-      <div>
+      <div ref="main">
         <ReactTitle title="Crie seu negócio online de impressão 3D - Alexandre Betioli" />
 
         <section className="section-sm black">

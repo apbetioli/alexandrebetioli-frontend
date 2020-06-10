@@ -11,6 +11,11 @@ import Garantia from "./Garantia";
 import Testemunhos from "./Testemunhos";
 
 class Lancamento extends React.Component {
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.refs.main.scrollTop = 0;
+  }
   render() {
     let cta = (
       <Container>
@@ -29,7 +34,7 @@ class Lancamento extends React.Component {
     );
 
     return (
-      <div>
+      <div ref="main">
         <ReactTitle title="Crie seu negócio online de impressão 3D - Alexandre Betioli" />
 
         <section className="section-sm black">
