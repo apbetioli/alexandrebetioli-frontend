@@ -3,7 +3,12 @@ import "assets/vendor/font-awesome/css/font-awesome.min.css";
 import "index.css";
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
 import Comunidade from "views/Comunidade";
 import CursoPro from "views/CursoPro";
 import CursoStarter from "views/CursoStarter";
@@ -64,6 +69,16 @@ ReactDOM.render(
         <Route path="/obrigado-curso" exact component={ObrigadoCompra} />
         <Route path="/obrigado-paypal" exact component={ObrigadoCompra} />
         <Route path="/obrigado-espera" exact render={obrigado_curso_render} />
+        <Route
+          path="/pl1"
+          exact
+          render={(props) => <PreLancamento {...props} active={"pl1"} />}
+        />
+        <Route
+          path="/pl2"
+          exact
+          render={(props) => <PreLancamento {...props} active={"pl2"} />}
+        />
         <Redirect to="/" />
       </Switch>
     </Router>
