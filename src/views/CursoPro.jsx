@@ -46,7 +46,7 @@ class CursoPro extends React.Component {
 
                 <EmailForm
                   formId="1327091"
-                  buttonText="Quero saber mais"
+                  buttonText="Fazer minha pré-inscrição"
                   redirect="/obrigado-espera"
                 />
               </Col>
