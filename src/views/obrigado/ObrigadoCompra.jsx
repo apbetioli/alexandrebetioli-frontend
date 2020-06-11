@@ -30,12 +30,18 @@ class ObrigadoCompra extends React.Component {
                   curso, se você pagou por cartão de crédito.
                 </p>
                 <p>
-                  Caso tenha sido pelo paypal, pode demorar um pouco mais pois
+                  Caso tenha sido pelo Paypal, pode demorar até 24 horas pois
                   ele passa por uma análise antes.
                 </p>
                 <p>
                   Caso tenha pago por boleto você receberá em até 3 dias úteis
                   no seu email.
+                </p>
+                <p>
+                  Qualquer dúvida entre em contato pelo email{" "}
+                  <a href="mailto:contato@alexandrebetioli.com.br">
+                    contato@alexandrebetioli.com.br
+                  </a>
                 </p>
               </Col>
             </Row>
