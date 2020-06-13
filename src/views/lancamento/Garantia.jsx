@@ -11,7 +11,7 @@ class Garantia extends React.Component {
           </Col>
           <Col lg="9">
             <br />
-            <h3>Faça sua matrícula tranquila</h3>
+            <h3>Faça sua matrícula com 30 dias de garantia</h3>
             <p>
               Se dentro de 30 dias você decidir que o curso não é para você, não
               teve nenhuma evolução ou não era o que você esperava, é só mandar

@@ -84,6 +84,10 @@ class FAQs extends React.Component {
             parcelado em até 12x no cartão de crédito. Você também pode utilizar
             dois cartões para somar os limites dos dois, se desejar.
           </FAQ>
+          <FAQ id="q11" question="Qual o valor do curso?">
+            O valor do curso é de até 12x R$ 48,42 (com juros) no cartão ou R$
+            497,00 à vista.
+          </FAQ>
           <Col lg="12">
             Restou alguma dúvida? Mande um email para
             <a href="mailto:contato@alexandrebetioli.com.br">
