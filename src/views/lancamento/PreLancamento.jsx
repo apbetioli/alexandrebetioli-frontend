@@ -43,9 +43,9 @@ class PreLancamento extends React.Component {
       pl2_content = (
         <div className="embed-responsive embed-responsive-16by9">
           <iframe
-            title="pl1"
+            title="pl2"
             className="embed-responsive-item"
-            src="https://www.youtube.com/embed/l9Mi7w78Mig?rel=0"
+            src="https://www.youtube.com/embed/FVL-5P9t80E?rel=0"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
