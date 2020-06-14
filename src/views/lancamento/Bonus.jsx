@@ -19,18 +19,20 @@ class Bonus extends React.Component {
           </Col>
           <Col lg="12">
             <VerticalTimeline animate={false}>
-              <VerticalTimelineElement
-                iconStyle={iconStyle}
-                icon={<BrightnessHigh />}
-              >
-                <h4 className="vertical-timeline-element-title">
-                  Acompanhamento
-                </h4>
-                <p>
-                  Vou fazer uma acompanhamento individual do seu negócio e
-                  ajudar você a seguir na direção certa!
-                </p>
-              </VerticalTimelineElement>
+              {this.props.special && (
+                <VerticalTimelineElement
+                  iconStyle={iconStyle}
+                  icon={<BrightnessHigh />}
+                >
+                  <h4 className="vertical-timeline-element-title">
+                    Bônus Especial: Acompanhamento
+                  </h4>
+                  <p>
+                    Vou fazer uma acompanhamento individual do seu negócio e
+                    ajudar você a seguir na direção certa!
+                  </p>
+                </VerticalTimelineElement>
+              )}
               <VerticalTimelineElement
                 iconStyle={iconStyle}
                 icon={<BrightnessLow />}
@@ -65,6 +67,19 @@ class Bonus extends React.Component {
                   fazenda de impressão.
                 </p>
               </VerticalTimelineElement>
+
+              <VerticalTimelineElement
+                iconStyle={iconStyle}
+                icon={<BrightnessHigh />}
+              >
+                <h4 className="vertical-timeline-element-title">
+                  Empreendedor de sucesso
+                </h4>
+                <p>
+                  Vou dar algumas aulas sobre empreendedorismo para que você
+                  seja um empreendedor de sucesso.
+                </p>
+              </VerticalTimelineElement>
             </VerticalTimeline>
           </Col>
         </Row>
@@ -72,5 +87,9 @@ class Bonus extends React.Component {
     );
   }
 }
+
+Bonus.defaultProps = {
+  special: false,
+};
 
 export default Bonus;

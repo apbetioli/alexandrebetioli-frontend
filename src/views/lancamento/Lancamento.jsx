@@ -17,6 +17,16 @@ class Lancamento extends React.Component {
     this.refs.main.scrollTop = 0;
   }
   render() {
+    let today = new Date();
+    let videoURL = "https://www.youtube.com/embed/5y7SuLcMtO0?rel=0"; //with bonus
+    let bonusSpecial = true;
+    let ctaText = "Quero fazer minha matrícula com bônus especial";
+    if (today >= new Date("2020-06-16 00:00:00")) {
+      videoURL = "https://www.youtube.com/embed/N4WPz8pasxI?rel=0";
+      bonusSpecial = false;
+      ctaText = "Quero fazer minha matrícula";
+    }
+
     let cta = (
       <Container>
         <Row>
@@ -24,7 +34,7 @@ class Lancamento extends React.Component {
             <ActionButton
               color="checkout"
               href="https://pay.hotmart.com/Q23252637E?split=12"
-              text="Quero fazer minha matrícula"
+              text={ctaText}
               size="lg"
               block
             />
@@ -43,9 +53,9 @@ class Lancamento extends React.Component {
               <Col lg="12">
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe
-                    title="pl1"
+                    title="l1"
                     className="embed-responsive-item"
-                    src="https://www.youtube.com/embed/NKW25Kfw_JM?rel=0"
+                    src={videoURL}
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   ></iframe>
                 </div>
@@ -94,7 +104,7 @@ class Lancamento extends React.Component {
         </section>
 
         <section className="section black">
-          <Bonus />
+          <Bonus special={bonusSpecial} />
         </section>
 
         <section className="section">
