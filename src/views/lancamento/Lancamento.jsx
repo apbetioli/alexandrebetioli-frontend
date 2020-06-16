@@ -51,6 +51,7 @@ class Lancamento extends React.Component {
           <Container>
             <Row>
               <Col lg="12">
+                <p className="centered">ATENÇÃO: Matrículas abertas somente até 21/06</p>
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe
                     title="l1"
