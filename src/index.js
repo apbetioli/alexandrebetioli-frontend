@@ -33,7 +33,7 @@ const dates = {
 const curso_render = (props) => {
   let today = new Date();
   if (today >= dates.start && today < dates.end) {
-    return <Lancamento />;
+    return <Lancamento {...props} dates={dates} />;
   }
   if (today < dates.start || today >= dates.end) {
     return <CursoPro {...props} dates={dates} />;

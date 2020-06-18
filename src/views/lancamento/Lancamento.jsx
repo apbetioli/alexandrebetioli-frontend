@@ -9,6 +9,7 @@ import Conteudo from "./Conteudo";
 import FAQs from "./FAQs";
 import Garantia from "./Garantia";
 import Testemunhos from "./Testemunhos";
+import Countdown from "react-countdown";
 
 class Lancamento extends React.Component {
   componentDidMount() {
@@ -43,15 +44,57 @@ class Lancamento extends React.Component {
       </Container>
     );
 
+    let countdownRenderer = ({ days, hours, minutes, seconds, completed }) => {
+      if (completed) {
+        return <p>Matrículas encerradas!</p>;
+      } else {
+        if (days <= 2) {
+          return (
+            <>
+              <Col lg="6" xs="12">
+                <span className="h1 text-right d-none d-lg-block">Faltam apenas:</span>
+                <span className="d-lg-none">Faltam apenas:</span>
+              </Col>
+              <Col lg="1" xs="3">
+                <span className="h1"> {days} </span>
+                <div>dias</div>
+              </Col>
+              <Col lg="1" xs="3">
+                <span className="h1"> {hours} </span>
+                <div>horas</div>
+              </Col>
+              <Col lg="1" xs="3">
+                <span className="h1"> {minutes} </span>
+                <div>minutos</div>
+              </Col>
+              <Col lg="1" xs="3">
+                <span className="h1"> {seconds} </span>
+                <div>segundos</div>
+              </Col>
+            </>
+          );
+        } else {
+          return (
+            <Col lg="12">
+              <p>ATENÇÃO: Matrículas abertas somente até 21/06</p>
+            </Col>
+          );
+        }
+      }
+    };
+
     return (
       <div ref="main">
         <ReactTitle title="Crie seu negócio online de impressão 3D - Alexandre Betioli" />
 
-        <section className="section-sm black">
+        <section className="section-sm black mt-0 pt-0 centered">
           <Container>
             <Row>
+              <Countdown
+                date={this.props.dates.end}
+                renderer={countdownRenderer}
+              />
               <Col lg="12">
-                <p className="centered">ATENÇÃO: Matrículas abertas somente até 21/06</p>
                 <div className="embed-responsive embed-responsive-16by9">
                   <iframe
                     title="l1"
