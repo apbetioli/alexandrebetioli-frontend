@@ -15,7 +15,7 @@ class Bonus extends React.Component {
       <Container>
         <Row>
           <Col lg="12">
-            <h2 className="centered">Bônus imperdíveis</h2>
+            <h2 className="centered">Bônus <span className="checkout">imperdíveis</span></h2>
           </Col>
           <Col lg="12">
             <VerticalTimeline animate={false}>
