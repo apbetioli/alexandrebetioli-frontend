@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.10.1",
     "@material-ui/icons": "^4.9.1",
+    "@nivo/bar": "^0.62.0",
     "argon-design-system-react": "^1.1.0",
     "date-fns": "^2.14.0",
     "react": "^16.13.1",

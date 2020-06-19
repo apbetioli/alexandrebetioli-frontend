@@ -22,6 +22,7 @@ import ObrigadoEspera from "views/obrigado/ObrigadoEspera";
 import ObrigadoPlanilha from "views/obrigado/ObrigadoPlanilha";
 import Planilha from "views/Planilha";
 import * as serviceWorker from "./serviceWorker";
+import Quiz from "views/curso/Quiz";
 
 const dates = {
   pl1: new Date("2020-06-12 08:00:00"),
@@ -83,6 +84,7 @@ ReactDOM.render(
             <PreLancamento {...props} active={"pl2"} dates={dates} />
           )}
         />
+        <Route path="/quiz" exact component={Quiz} />
         <Redirect to="/" />
       </Switch>
     </Router>
