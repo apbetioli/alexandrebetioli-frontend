@@ -22,9 +22,8 @@ class QuemSouEu extends React.Component {
               Acredito que compartilhar o conhecimento é a melhor forma de
               aprender. Também acredito que os empreendedores brasileiros
               precisam aproveitar mais as oportunidades que a impressão 3D tem a
-              oferecer. Minha missão é levar meu conhecimento para o maior
-              número de pessoas possível. Aprenda comigo tudo sobre impressão 3D
-              e vendas em e-commerce, marketplaces e redes sociais.
+              oferecer. Minha missão é levar todo o meu conhecimento de
+              impressão 3D para o maior número de pessoas possível.
             </p>
           </Col>
         </Row>
