@@ -89,8 +89,6 @@ class Quiz extends React.Component {
   }
 
   calculate(v) {
-    console.log(v);
-
     let oportunidades = v[1] + v[12] + v[23] - v[34] + v[45] + 6;
     let persistencia = v[2] + v[13] + v[24] - v[35] + v[46] + 6;
     let comprometimento = v[3] + v[14] + v[25] + v[36] - v[47] + 6;
