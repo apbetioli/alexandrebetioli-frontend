@@ -71,7 +71,7 @@ class FAQs extends React.Component {
           <FAQ id="q1" question="Como será entregue?">
             O curso é online e em vídeo, disponibilizado através de uma
             plataforma especializada em ensino à distância. As aulas e os
-            módulos são liberados ao longo dos 3 meses iniciais.
+            módulos são liberados semanalmente ao longo dos 2 meses iniciais.
           </FAQ>
           <FAQ id="q7" question="Quais são os horários das aulas? ">
             O curso será gravado e você poderá assistir a qualquer momento que
