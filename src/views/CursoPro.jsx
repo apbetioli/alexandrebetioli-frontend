@@ -36,7 +36,7 @@ class CursoPro extends React.Component {
 
     if (hoje > this.props.dates.end) {
       description = (
-        <p>Faça sua inscrição para ser avisado da próxima turma.</p>
+        <p><span className="text-primary">Inscrições encerradas! </span>Faça sua inscrição para ser avisado da próxima turma.</p>
       );
       buttonText = "Quero ser avisado";
     }
