@@ -66,6 +66,12 @@ class Header extends React.Component {
                     to="/curso"
                     icon="fa fa-rocket"
                   />
+                  <MenuItem
+                    id="comunidadelink"
+                    text="COMUNIDADE"
+                    to="/comunidade"
+                    icon="fa fa-users"
+                  />
                   
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>

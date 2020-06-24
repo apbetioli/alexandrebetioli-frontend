@@ -3,6 +3,7 @@ import Header from "components/Header";
 import React from "react";
 import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
+import ActionButton from "components/ActionButton";
 
 class Comunidade extends React.Component {
   componentDidMount() {
@@ -14,7 +15,7 @@ class Comunidade extends React.Component {
     return (
       <div ref="main">
         <MetaTags>
-          <title>Comunidade 3D COMMERCE - Alexandre Betioli</title>
+          <title>Comunidade AB3D - Alexandre Betioli</title>
           <meta
             name="description"
             content="Participe da comunidade e acelere seu aprendizado interajindo com outros profissionais do mercado de impressão 3D."
@@ -26,12 +27,15 @@ class Comunidade extends React.Component {
           <Container>
             <Row>
               <Col lg="8">
-                <h1>Comunidade 3D COMMERCE</h1>
+                <h1>Comunidade AB3D</h1>
 
                 <p className="lead">
                   Acelere o seu aprendizado. Tire suas dúvidas e interaja com
                   outros profissionais do mercado de impressão 3D.
                 </p>
+
+                <ActionButton text="Quero meu convite" href="https://discord.gg/sVXPeBn"/>
+
               </Col>
               <Col lg="4" className="centered discord">
                 <img alt="..." src={require("assets/img/discord.png")} />
@@ -40,7 +44,7 @@ class Comunidade extends React.Component {
                 <h2>Sobre a comunidade</h2>
 
                 <p>
-                  A comunidade 3D COMMERCE oferece uma forma organizada de para
+                  A comunidade AB3D oferece uma forma organizada de para
                   tirar dúvidas e conectar as pessoas para que possam trocar
                   experiências e evoluir no aprendizado do uso da impressão 3D
                   nos negócios.
@@ -75,14 +79,6 @@ class Comunidade extends React.Component {
                   <li>
                     <strong>#ajuda</strong> - Canal para tirar dúvidas e pedir
                     ajuda sobre qualquer coisa relacionada a impressão 3D.
-                  </li>
-                  <li>
-                    <strong>#modelagem</strong> - Canal para falar
-                    exclusivamente sobre modelagem 3D.
-                  </li>
-                  <li>
-                    <strong>#impressoras</strong> - Canal para falar
-                    exclusivamente sobre impressoras 3D.
                   </li>
                   <li>
                     <strong>#oportunidades</strong> - Você está buscando ou quer
