@@ -48,7 +48,35 @@ class LandingPage extends React.Component {
           </Container>
         </section>
 
-        <section className="section">
+        <section id="comunidade" className="section discord">
+          <Container>
+            <Row>
+              <Col lg="6">
+                <h2>
+                  <i className="fa fa-users" />
+                  <span>
+                    {" "}
+                    Acelere seu aprendizado participando da comunidade
+                  </span>
+                </h2>
+
+                <p>
+                  Potencialize o seu aprendizado. Tire suas dúvidas e interaja
+                  com outros profissionais do mercado de impressão 3D.
+                </p>
+
+                <ActionButton color="primary" to="/comunidade">
+                  Acessar comunidade
+                </ActionButton>
+              </Col>
+              <Col lg="6" className="centered">
+                <img alt="..." src={require("assets/img/discord.png")} />
+              </Col>
+            </Row>
+          </Container>
+        </section>
+
+        <section className="section black">
           <Container>
             <Row>
               <Col lg="6">
@@ -72,34 +100,6 @@ class LandingPage extends React.Component {
                   tecnologia.
                 </p>
                 <ActionButton text="Reservar minha vaga" to="/curso" />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-
-        <section id="comunidade" className="section discord d-none">
-          <Container>
-            <Row>
-              <Col lg="6">
-                <h2>
-                  <i className="fa fa-users" />
-                  <span>
-                    {" "}
-                    Acelere seu aprendizado participando da comunidade
-                  </span>
-                </h2>
-
-                <p>
-                  Potencialize o seu aprendizado. Tire suas dúvidas e interaja
-                  com outros profissionais do mercado de impressão 3D.
-                </p>
-
-                <ActionButton color="primary" to="/comunidade">
-                  Acessar comunidade
-                </ActionButton>
-              </Col>
-              <Col lg="6" className="centered">
-                <img alt="..." src={require("assets/img/discord.png")} />
               </Col>
             </Row>
           </Container>
