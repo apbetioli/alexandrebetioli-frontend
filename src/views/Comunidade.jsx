@@ -34,7 +34,9 @@ class Comunidade extends React.Component {
                   outros profissionais do mercado de impressão 3D.
                 </p>
 
-                <ActionButton text="Quero meu convite" href="https://discord.gg/sVXPeBn"/>
+                <p>
+                  <ActionButton text="Quero meu convite" href="https://discord.gg/sVXPeBn"/>
+                </p>
 
               </Col>
               <Col lg="4" className="centered discord">
