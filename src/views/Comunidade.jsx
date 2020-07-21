@@ -1,9 +1,9 @@
+import ActionButton from "components/ActionButton";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
 import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
-import ActionButton from "components/ActionButton";
 
 class Comunidade extends React.Component {
   componentDidMount() {
@@ -12,6 +12,8 @@ class Comunidade extends React.Component {
     this.refs.main.scrollTop = 0;
   }
   render() {
+    const convite = "https://discord.gg/sVXPeBn";
+
     return (
       <div ref="main">
         <MetaTags>
@@ -23,31 +25,42 @@ class Comunidade extends React.Component {
         </MetaTags>
 
         <Header />
-        <section className="section comunidade">
+        <section className="section comunidade black">
           <Container>
             <Row>
               <Col lg="8">
-                <h1>Comunidade AB3D</h1>
+                <h1>
+                  <i className="fa fa-users" />
+                  <span> Comunidade AB3D</span>
+                </h1>
 
                 <p className="lead">
-                  Acelere o seu aprendizado. Tire suas dúvidas e interaja com
-                  outros profissionais do mercado de impressão 3D.
+                  Potencialize seu aprendizado participando da comunidade, tire
+                  suas dúvidas e interaja com outros profissionais do mercado de
+                  impressão 3D.
                 </p>
 
                 <p>
-                  <ActionButton text="Quero meu convite" href="https://discord.gg/sVXPeBn"/>
+                  <ActionButton text="Quero meu convite" href={convite} />
                 </p>
-
               </Col>
               <Col lg="4" className="centered discord">
-                <img alt="..." src={require("assets/img/discord.png")} />
+                <a href={convite} target="_blank" rel="noopener noreferrer">
+                  <img alt="..." src={require("assets/img/discord.png")} />
+                </a>
               </Col>
+            </Row>
+          </Container>
+        </section>
+        <section className="section comunidade">
+          <Container>
+            <Row>
               <Col lg="12">
                 <h2>Sobre a comunidade</h2>
 
                 <p>
-                  A comunidade AB3D oferece uma forma organizada de para
-                  tirar dúvidas e conectar as pessoas para que possam trocar
+                  A comunidade AB3D oferece uma forma organizada de para tirar
+                  dúvidas e conectar as pessoas para que possam trocar
                   experiências e evoluir no aprendizado do uso da impressão 3D
                   nos negócios.
                 </p>

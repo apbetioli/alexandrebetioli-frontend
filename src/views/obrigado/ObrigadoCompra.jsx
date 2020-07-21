@@ -16,26 +16,22 @@ class ObrigadoCompra extends React.Component {
             <Row>
               <Col lg="12">
                 <h1>Muito obrigado!</h1>
+                <p className="lead">
+                  Sua inscrição foi concluída com sucesso!
+                </p>
               </Col>
             </Row>
             <Row>
               <Col lg="12">
                 {this.props.children}
-                <p className="lead">
-                  Parabéns! Sua inscrição foi concluída com sucesso!
-                </p>
-                <br />
+                <h2>Atenção!</h2>
                 <p>
                   Em alguns minutos você receberá em seu email o acesso ao
                   curso, se você pagou por cartão de crédito.
                 </p>
                 <p>
-                  Caso tenha sido pelo Paypal, pode demorar até 24 horas pois
-                  ele passa por uma análise antes.
-                </p>
-                <p>
-                  Caso tenha pago por boleto você receberá em até 3 dias úteis
-                  no seu email.
+                  Caso tenha pago por boleto você receberá o acesso em até 3
+                  dias úteis no seu email.
                 </p>
                 <p>
                   Qualquer dúvida entre em contato pelo email{" "}

@@ -7,9 +7,10 @@ import {
   BrowserRouter as Router,
   Redirect,
   Route,
-  Switch,
+  Switch
 } from "react-router-dom";
 import Comunidade from "views/Comunidade";
+import Quiz from "views/curso/Quiz";
 import CursoPro from "views/CursoPro";
 import CursoStarter from "views/CursoStarter";
 import Lancamento from "views/lancamento/Lancamento";
@@ -20,9 +21,9 @@ import Obrigado from "views/obrigado/Obrigado";
 import ObrigadoCompra from "views/obrigado/ObrigadoCompra";
 import ObrigadoEspera from "views/obrigado/ObrigadoEspera";
 import ObrigadoPlanilha from "views/obrigado/ObrigadoPlanilha";
+import ReengajamentoLead from "views/obrigado/ReengajamentoLead";
 import Planilha from "views/Planilha";
 import * as serviceWorker from "./serviceWorker";
-import Quiz from "views/curso/Quiz";
 
 const dates = {
   pl1: new Date("2020-06-12 08:00:00"),
@@ -85,6 +86,7 @@ ReactDOM.render(
           )}
         />
         <Route path="/quiz" exact component={Quiz} />
+        <Route path="/confirmacao-lista" exact component={ReengajamentoLead} />
         <Redirect to="/" />
       </Switch>
     </Router>

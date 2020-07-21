@@ -1,5 +1,4 @@
 import ActionButton from "components/ActionButton";
-import EmailForm from "components/EmailForm";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
@@ -13,6 +12,8 @@ class LandingPage extends React.Component {
     this.refs.main.scrollTop = 0;
   }
   render() {
+    const convite = "https://discord.gg/sVXPeBn";
+
     return (
       <div ref="main">
         <MetaTags>
@@ -35,49 +36,43 @@ class LandingPage extends React.Component {
                   No meio de tanta informação que surge todos os dias, você
                   precisa de alguém que te leve na direção certa.
                 </p>
-                <ActionButton text="É ISSO QUE EU QUERO" to="/starter" />
-              </Col>
-              <Col lg="6">
-                <img
-                  className="hero-img"
-                  alt="..."
-                  src={require("assets/img/lion.jpg")}
+                <ActionButton
+                  text="IR PARA O CANAL DO YOUTUBE"
+                  href="https://www.youtube.com/channel/UCsW8AqQR62iwXoiWYfe-ovA"
                 />
               </Col>
+              <Col lg="6">
+                <div className="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    title="list"
+                    className="embed-responsive-item"
+                    src="https://www.youtube.com/embed/yteL-NMIRDk?list=UUsW8AqQR62iwXoiWYfe-ovA"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </Col>
             </Row>
           </Container>
         </section>
 
-        <section id="comunidade" className="section discord">
+        <section className="section">
           <Container>
             <Row>
-              <Col lg="6">
-                <h2>
-                  <i className="fa fa-users" />
-                  <span>
-                    {" "}
-                    Acelere seu aprendizado participando da comunidade
-                  </span>
-                </h2>
+              <Col lg="12">
+                <h1>
+                  <i className="fa fa-rocket" />
+                  <span> Acelere seu aprendizado</span>
+                </h1>
 
-                <p>
-                  Potencialize o seu aprendizado. Tire suas dúvidas e interaja
-                  com outros profissionais do mercado de impressão 3D.
+                <p className="lead">
+                  E para você que não quer perder tempo, você pode seguir as
+                  trilhas de estudo que vão te levar mais rápido aos seus
+                  objetivos.
                 </p>
-
-                <ActionButton color="primary" to="/comunidade">
-                  Acessar comunidade
-                </ActionButton>
-              </Col>
-              <Col lg="6" className="centered">
-                <img alt="..." src={require("assets/img/discord.png")} />
               </Col>
             </Row>
-          </Container>
-        </section>
-
-        <section className="section black">
-          <Container>
             <Row>
               <Col lg="6">
                 <h2>
@@ -92,7 +87,7 @@ class LandingPage extends React.Component {
               </Col>
               <Col lg="6">
                 <h2>
-                  <i className="fa fa-rocket" />
+                  <i className="fa fa-shopping-cart" />
                   <span> 3D Commerce</span>
                 </h2>
                 <p>
@@ -105,24 +100,27 @@ class LandingPage extends React.Component {
           </Container>
         </section>
 
-        <section className="section inverse">
+        <section id="comunidade" className="section discord black">
           <Container>
             <Row>
-              <Col lg="12">
-                <h2>
-                  <i className="fa fa-envelope" />
-                  <span> Newsletter</span>
-                </h2>
-                <p className="lead">
-                  Receba notificações de novidades e conteúdos exclusivos.
-                </p>
-                <p>Prometemos não enviar spam!</p>
+              <Col lg="8">
+                <h1>
+                  <i className="fa fa-users" />
+                  <span> Potencialize seu aprendizado</span>
+                </h1>
 
-                <EmailForm
-                  formId="1377394"
-                  buttonText="Fazer meu cadastro"
-                  redirect="/obrigado-live"
-                />
+                <p className="lead">
+                  Participe da comunidade de impressão 3D e empreendedorismo
+                  AB3D. Tire suas dúvidas e interaja com outros profissionais do
+                  mercado de impressão 3D.
+                </p>
+
+                <ActionButton color="primary" to="/comunidade" />
+              </Col>
+              <Col lg="4" className="centered">
+                <a href={convite} target="_blank" rel="noopener noreferrer">
+                  <img alt="..." src={require("assets/img/discord.png")} />
+                </a>
               </Col>
             </Row>
           </Container>

@@ -3,6 +3,7 @@ import Header from "components/Header";
 import React from "react";
 import { ReactTitle } from "react-meta-tags";
 import { Button, Col, Container, Row } from "reactstrap";
+import ActionButton from "components/ActionButton";
 
 class Obrigado extends React.Component {
   render() {
@@ -15,42 +16,36 @@ class Obrigado extends React.Component {
           <Container>
             <Row>
               <Col lg="12">
-                <h1>Obrigado!</h1>
+                <h1>Yesss!</h1>
               </Col>
             </Row>
             <Row>
               <Col lg="12">
                 {this.props.children}
-                <p className="lead">Próximos passos...</p>
+                <p className="lead">Enquanto isso...</p>
               </Col>
             </Row>
             <Row>
-              <Col lg="6" className="d-none">
+              <Col lg="6">
                 <h2>
                   <i className="fa fa-discord color-discord" />
                   <span> Participe da comunidade</span>
                 </h2>
 
-                <p className="lead">
+                <p>
                   Potencialize o seu aprendizado. Tire suas dúvidas e interaja
                   com outros profissionais do mercado de impressão 3D.
                 </p>
 
-                <Button
-                  className="background-color-discord"
-                  href="https://discord.gg/sVXPeBn"
-                  target="_blank"
-                >
-                  Acessar comunidade
-                </Button>
+                <ActionButton color="discord" to="/comunidade" />
               </Col>
-              <Col lg="6">
+              <Col lg="6" className="d-none">
                 <h2>
                   <i className="fa fa-telegram color-telegram" />
                   <span> Junte-se no Telegram</span>
                 </h2>
 
-                <p className="lead">
+                <p>
                   Clique abaixo e cadastre-se para receber avisos e atualizações
                   de aulas e novos conteúdos através do meu canal exclusivo no
                   Telegram.
@@ -69,7 +64,7 @@ class Obrigado extends React.Component {
                   <i className="fa fa-youtube color-youtube" /> Inscreva-se no{" "}
                   <span className="color-youtube">YouTube</span>
                 </h3>
-                <p className="lead">
+                <p>
                   E para aprender mais sobre impressão 3D se inscreva no meu
                   canal do Youtube onde posto novos conteúdos toda semana.
                 </p>
