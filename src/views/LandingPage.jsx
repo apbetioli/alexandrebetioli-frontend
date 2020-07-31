@@ -46,7 +46,7 @@ class LandingPage extends React.Component {
                   <iframe
                     title="list"
                     className="embed-responsive-item"
-                    src="https://www.youtube.com/embed/yteL-NMIRDk?list=UUsW8AqQR62iwXoiWYfe-ovA"
+                    src="https://www.youtube.com/embed/?list=UUsW8AqQR62iwXoiWYfe-ovA"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
