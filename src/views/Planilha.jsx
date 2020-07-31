@@ -29,8 +29,10 @@ class Planilha extends React.Component {
               <Col lg="6">
                 <h1>Receba a planilha em seu email gratuitamente</h1>
                 <p>
-                  Não deixe de assistir o vídeo onde eu explico o passo a passo
-                  com todos os detalhes de como utilizar a planilha.
+                  Se inscreva para receber a planilha de cálculo de preços de
+                  impressão 3D. Não deixe de assistir o vídeo onde eu explico o
+                  passo a passo com todos os detalhes de como utilizar a
+                  planilha.
                 </p>
 
                 <EmailForm
