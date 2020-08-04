@@ -1,9 +1,9 @@
+import ActionButton from "components/ActionButton";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
 import { ReactTitle } from "react-meta-tags";
 import { Button, Col, Container, Row } from "reactstrap";
-import ActionButton from "components/ActionButton";
 
 class Obrigado extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class Obrigado extends React.Component {
           <Container>
             <Row>
               <Col lg="12">
-                <h1>Yesss!</h1>
+                <h1>{this.props.title}</h1>
               </Col>
             </Row>
             <Row>
@@ -84,5 +84,8 @@ class Obrigado extends React.Component {
     );
   }
 }
+Obrigado.defaultProps = {
+  title: "Yesss!",
+};
 
 export default Obrigado;

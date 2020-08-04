@@ -17,11 +17,10 @@ import Lancamento from "views/lancamento/Lancamento";
 import PreLancamento from "views/lancamento/PreLancamento";
 import LandingPage from "views/LandingPage";
 import Login from "views/Login";
-import Obrigado from "views/obrigado/Obrigado";
+import ConfirmacaoLista from "views/obrigado/ConfirmacaoLista";
 import ObrigadoCompra from "views/obrigado/ObrigadoCompra";
 import ObrigadoEspera from "views/obrigado/ObrigadoEspera";
 import ObrigadoPlanilha from "views/obrigado/ObrigadoPlanilha";
-import ReengajamentoLead from "views/obrigado/ReengajamentoLead";
 import Planilha from "views/Planilha";
 import * as serviceWorker from "./serviceWorker";
 
@@ -64,9 +63,9 @@ ReactDOM.render(
         <Route path="/matriculas-abertas" exact render={curso_render} />
         <Route path="/lancamento" exact component={Lancamento} />
         <Route path="/login" exact component={Login} />
-        <Route path="/obrigado-starter" exact component={Obrigado} />
+        <Route path="/obrigado-starter" exact component={ObrigadoEspera} />
         <Route path="/obrigado-planilha" exact component={ObrigadoPlanilha} />
-        <Route path="/obrigado-live" exact component={Obrigado} />
+        <Route path="/obrigado-live" exact component={ObrigadoEspera} />
         <Route path="/obrigado-boleto" exact component={ObrigadoCompra} />
         <Route path="/obrigado-curso" exact component={ObrigadoCompra} />
         <Route path="/obrigado-paypal" exact component={ObrigadoCompra} />
@@ -86,7 +85,7 @@ ReactDOM.render(
           )}
         />
         <Route path="/quiz" exact component={Quiz} />
-        <Route path="/confirmacao-lista" exact component={ReengajamentoLead} />
+        <Route path="/confirmacao-lista" exact component={ConfirmacaoLista} />
         <Redirect to="/" />
       </Switch>
     </Router>

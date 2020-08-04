@@ -15,23 +15,23 @@ class ObrigadoCompra extends React.Component {
           <Container>
             <Row>
               <Col lg="12">
-                <h1>Muito obrigado!</h1>
+                <h1>Parabéns!</h1>
                 <p className="lead">
-                  Sua inscrição foi concluída com sucesso!
+                  A sua inscrição foi concluída com sucesso!
                 </p>
               </Col>
             </Row>
             <Row>
               <Col lg="12">
                 {this.props.children}
-                <h2>Atenção!</h2>
+                <p className="lead">Atenção!</p>
                 <p>
-                  Em alguns minutos você receberá em seu email o acesso ao
-                  curso, se você pagou por cartão de crédito.
+                  Em alguns minutos a <strong>Hotmart</strong> enviará para seu email o acesso ao
+                  curso, se você pagou por <strong>cartão de crédito</strong>.
                 </p>
                 <p>
-                  Caso tenha pago por boleto você receberá o acesso em até 3
-                  dias úteis no seu email.
+                  Caso tenha pago por <strong>boleto</strong> você receberá o acesso em até <strong>3
+                  dias úteis </strong> no seu email.
                 </p>
                 <p>
                   Qualquer dúvida entre em contato pelo email{" "}
