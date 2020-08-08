@@ -31,6 +31,10 @@ const dates = {
   end: new Date("2020-06-22 00:00:00"),
 };
 
+const lancamento_debug_render = (props) => {
+  return <Lancamento {...props} dates={dates} />;
+};
+
 const curso_render = (props) => {
   let today = new Date();
   if (today >= dates.start && today < dates.end) {
@@ -61,11 +65,10 @@ ReactDOM.render(
         <Route path="/comunidade" exact component={Comunidade} />
         <Route path="/planilha" exact component={Planilha} />
         <Route path="/matriculas-abertas" exact render={curso_render} />
-        <Route path="/lancamento" exact component={Lancamento} />
+        <Route path="/lancamento" exact render={lancamento_debug_render} />
         <Route path="/login" exact component={Login} />
         <Route path="/obrigado-starter" exact component={ObrigadoEspera} />
-        <Route path="/obrigado-planilha" exact component={ObrigadoPlanilha} />
-        <Route path="/obrigado-live" exact component={ObrigadoEspera} />
+        <Route path="/obrigado-planilha" exact component={ObrigadoPlanilha} />0
         <Route path="/obrigado-boleto" exact component={ObrigadoCompra} />
         <Route path="/obrigado-curso" exact component={ObrigadoCompra} />
         <Route path="/obrigado-paypal" exact component={ObrigadoCompra} />
