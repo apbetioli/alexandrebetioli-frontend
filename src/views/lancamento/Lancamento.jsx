@@ -2,21 +2,17 @@ import ActionButton from "components/ActionButton";
 import Footer from "components/Footer";
 import QuemSouEu from "components/QuemSouEu";
 import React from "react";
-import { ReactTitle } from "react-meta-tags";
+import Countdown from "react-countdown";
+import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
+import View from "views/View";
 import Bonus from "./Bonus";
 import Conteudo from "./Conteudo";
 import FAQs from "./FAQs";
 import Garantia from "./Garantia";
 import Testemunhos from "./Testemunhos";
-import Countdown from "react-countdown";
 
-class Lancamento extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
+class Lancamento extends View {
   render() {
     let today = new Date();
     let videoURL = "https://www.youtube.com/embed/5y7SuLcMtO0?rel=0"; //with bonus
@@ -52,7 +48,9 @@ class Lancamento extends React.Component {
           return (
             <>
               <Col lg="6" xs="12">
-                <span className="h1 text-right d-none d-lg-block">Faltam apenas:</span>
+                <span className="h1 text-right d-none d-lg-block">
+                  Faltam apenas:
+                </span>
                 <span className="d-lg-none">Faltam apenas:</span>
               </Col>
               <Col lg="1" xs="3">
@@ -85,7 +83,23 @@ class Lancamento extends React.Component {
 
     return (
       <div ref="main">
-        <ReactTitle title="Crie seu negócio online de impressão 3D - Alexandre Betioli" />
+        <MetaTags>
+          <title>
+            Crie seu negócio online de impressão 3D - Alexandre Betioli
+          </title>
+          <meta
+            name="description"
+            content="Treinamento para quem não tem tempo a perder e quer começar a lucrar com impressão 3D."
+          />
+          <meta
+            name="keywords"
+            content="impressão 3d,comunidade,3d printing,impressora 3d,fdm,sla,empreendedorismo,planilha,curso,aula,grátis"
+          />
+          <meta
+            name="robots"
+            content="index,follow,noarchive,noimageindex"
+          ></meta>
+        </MetaTags>
 
         <section className="section-sm black mt-0 pt-0 centered">
           <Container>

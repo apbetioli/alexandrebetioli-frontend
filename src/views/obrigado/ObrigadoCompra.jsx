@@ -1,14 +1,17 @@
 import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
-import { ReactTitle } from "react-meta-tags";
+import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
 
 class ObrigadoCompra extends React.Component {
   render() {
     return (
       <div>
-        <ReactTitle title="Obrigado - Alexandre Betioli" />
+        <MetaTags>
+          <title>Obrigado - Alexandre Betioli</title>
+          <meta name="robots" content="noindex,nofollow"></meta>
+        </MetaTags>
 
         <Header />
         <section className="section">
@@ -26,12 +29,13 @@ class ObrigadoCompra extends React.Component {
                 {this.props.children}
                 <p className="lead">Atenção!</p>
                 <p>
-                  Em alguns minutos a <strong>Hotmart</strong> enviará para seu email o acesso ao
-                  curso, se você pagou por <strong>cartão de crédito</strong>.
+                  Em alguns minutos a <strong>Hotmart</strong> enviará para seu
+                  email o acesso ao curso, se você pagou por{" "}
+                  <strong>cartão de crédito</strong>.
                 </p>
                 <p>
-                  Caso tenha pago por <strong>boleto</strong> você receberá o acesso em até <strong>3
-                  dias úteis </strong> no seu email.
+                  Caso tenha pago por <strong>boleto</strong> você receberá o
+                  acesso em até <strong>3 dias úteis </strong> no seu email.
                 </p>
                 <p>
                   Qualquer dúvida entre em contato pelo email{" "}

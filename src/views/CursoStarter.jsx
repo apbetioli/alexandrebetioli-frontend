@@ -5,13 +5,9 @@ import QuemSouEu from "components/QuemSouEu";
 import React from "react";
 import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
+import View from "./View";
 
-class CursoStarter extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
+class CursoStarter extends View {
   render() {
     return (
       <div ref="main">
@@ -21,6 +17,11 @@ class CursoStarter extends React.Component {
             name="description"
             content="Comece a explorar tudo o que a impressão 3D tem a te oferecer com estas aulas gratuitas."
           />
+          <meta
+            name="keywords"
+            content="impressão 3d,comunidade,3d printing,impressora 3d,fdm,sla,empreendedorismo,planilha,curso,aula,grátis"
+          />
+          <meta name="robots" content="index,follow"></meta>
         </MetaTags>
 
         <Header />

@@ -4,13 +4,9 @@ import Header from "components/Header";
 import React from "react";
 import { MetaTags } from "react-meta-tags";
 import { Card, CardBody, CardImg, Col, Container, Row } from "reactstrap";
+import View from "./View";
 
-class Planilha extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
+class Planilha extends View {
   render() {
     return (
       <div ref="main">
@@ -20,6 +16,11 @@ class Planilha extends React.Component {
             name="description"
             content="Aprenda a calcular o preço das suas impressões 3D e comece a ter lucro de verdade."
           />
+          <meta
+            name="keywords"
+            content="impressão 3d,comunidade,3d printing,impressora 3d,fdm,sla,empreendedorismo,planilha"
+          />
+          <meta name="robots" content="index,follow"></meta>
         </MetaTags>
 
         <Header />

@@ -4,13 +4,9 @@ import Header from "components/Header";
 import React from "react";
 import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
+import View from "./View";
 
-class Comunidade extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
+class Comunidade extends View {
   render() {
     const convite = "https://discord.gg/sVXPeBn";
 
@@ -20,8 +16,13 @@ class Comunidade extends React.Component {
           <title>Comunidade AB3D - Alexandre Betioli</title>
           <meta
             name="description"
-            content="Participe da comunidade e acelere seu aprendizado interajindo com outros profissionais do mercado de impressão 3D."
+            content="Participe da comunidade e acelere seu aprendizado interagindo com outros profissionais do mercado de impressão 3D."
           />
+          <meta
+            name="keywords"
+            content="impressão 3d,comunidade,3d printing,impressora 3d,fdm,sla,empreendedorismo,planilha,curso,aula,grátis"
+          />
+          <meta name="robots" content="index,follow"></meta>
         </MetaTags>
 
         <Header />

@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactTitle } from "react-meta-tags";
+import { MetaTags } from "react-meta-tags";
 import {
   Button,
   Col,
@@ -70,7 +70,8 @@ const perguntas = [
   "55. Quando desconheço algo, não hesito em admiti-lo",
 ];
 
-const mv = (value, x1, y1, x2, y2) => (value - x1) * (y2 - x2) / (y1 - x1) + x2;
+const mv = (value, x1, y1, x2, y2) =>
+  ((value - x1) * (y2 - x2)) / (y1 - x1) + x2;
 
 class Quiz extends React.Component {
   constructor(props) {
@@ -321,7 +322,10 @@ class Quiz extends React.Component {
   render() {
     return (
       <div ref="main">
-        <ReactTitle title="Qual é seu perfil empreendedor? - Alexandre Betioli" />
+        <MetaTags>
+          <title>Qual é seu perfil empreendedor? - Alexandre Betioli</title>
+          <meta name="robots" content="noindex,nofollow"></meta>
+        </MetaTags>
 
         <section className="section-sm">
           <Container>

@@ -2,14 +2,17 @@ import ActionButton from "components/ActionButton";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import React from "react";
-import { ReactTitle } from "react-meta-tags";
+import { MetaTags } from "react-meta-tags";
 import { Button, Col, Container, Row } from "reactstrap";
 
 class Obrigado extends React.Component {
   render() {
     return (
       <div>
-        <ReactTitle title="Obrigado - Alexandre Betioli" />
+        <MetaTags>
+          <title>Obrigado - Alexandre Betioli</title>
+          <meta name="robots" content="noindex,nofollow"></meta>
+        </MetaTags>
 
         <Header />
         <section className="section">

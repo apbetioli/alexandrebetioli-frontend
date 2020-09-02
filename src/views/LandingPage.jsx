@@ -4,13 +4,9 @@ import Header from "components/Header";
 import React from "react";
 import MetaTags from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
+import View from "./View";
 
-class LandingPage extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
+class LandingPage extends View {
   render() {
     const convite = "https://discord.gg/sVXPeBn";
 
@@ -22,6 +18,11 @@ class LandingPage extends React.Component {
             name="description"
             content="Aprenda sobre impressão 3D, participe de comunidades de discussão e potencialize seu aprendizado."
           />
+          <meta
+            name="keywords"
+            content="impressão 3d,comunidade,3d printing,impressora 3d,fdm,sla,empreendedorismo,planilha,curso,aula,grátis"
+          />
+          <meta name="robots" content="index,follow"></meta>
         </MetaTags>
 
         <Header />
@@ -46,10 +47,10 @@ class LandingPage extends React.Component {
                   <iframe
                     title="list"
                     className="embed-responsive-item"
-                    src="https://www.youtube.com/embed/?list=UUsW8AqQR62iwXoiWYfe-ovA"
-                    frameborder="0"
+                    src="https://www.youtube.com/embed/qnijiarBWpk"
+                    frameBorder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
                 </div>
               </Col>

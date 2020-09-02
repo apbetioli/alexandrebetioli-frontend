@@ -6,13 +6,9 @@ import { format } from "date-fns";
 import React from "react";
 import { MetaTags } from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
+import View from "./View";
 
-class CursoPro extends React.Component {
-  componentDidMount() {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
-  }
+class CursoPro extends View {
   render() {
     let hoje = new Date();
     let formatted_start = format(this.props.dates.start, "dd/MM 'às' HH'h'");
@@ -36,7 +32,10 @@ class CursoPro extends React.Component {
 
     if (hoje > this.props.dates.end) {
       description = (
-        <p><span className="text-primary">Inscrições encerradas! </span>Faça sua inscrição para ser avisado da próxima turma.</p>
+        <p>
+          <span className="text-primary">Inscrições encerradas! </span>Faça sua
+          inscrição para ser avisado da próxima turma.
+        </p>
       );
       buttonText = "Quero ser avisado";
     }
@@ -51,6 +50,11 @@ class CursoPro extends React.Component {
             name="description"
             content="Treinamento para quem não tem tempo a perder e quer começar a lucrar com impressão 3D."
           />
+          <meta
+            name="keywords"
+            content="impressão 3d,comunidade,3d printing,impressora 3d,fdm,sla,empreendedorismo,planilha,curso,aula,grátis"
+          />
+          <meta name="robots" content="index,follow"></meta>
         </MetaTags>
 
         <Header />
