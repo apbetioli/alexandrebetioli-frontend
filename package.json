@@ -42,7 +42,8 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^4.14.1",
+    "webpack": "^4.44.1"
   },
   "engines": {
     "node": ">=12.8.1"
