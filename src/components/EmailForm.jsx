@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { Button, Col, FormGroup, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from "reactstrap";
+import api from "../services/api";
 
 class EmailForm extends React.Component {
   constructor(props) {
@@ -13,35 +14,30 @@ class EmailForm extends React.Component {
     this.setState({ email: event.target.value });
   }
 
-  onSubmit(event) {
+  async onSubmit(event) {
     event.preventDefault();
     localStorage.setItem('email', this.state.email); 
 
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        api_key: process.env.REACT_APP_CK_API_KEY,
-        email: this.state.email,
-      }),
-    };
-    fetch(
-      "https://api.convertkit.com/v3/forms/" + this.props.formId + "/subscribe",
-      requestOptions
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({ subscription: data.subscription });
-        this.props.history.push(
-          this.props.redirect +
-            "?email=" +
-            this.state.email +
-            "&ck_id=" +
-            data.subscription.subscriber.id
-        );
-      });
-  }
+    try {
+      let form = {
+        email: this.state.email
+      };
 
+      await api.post('/subscribe', form);
+
+      this.props.history.push(
+        this.props.redirect +
+          "?email=" +
+          this.state.email
+      );
+
+    } catch (error) {
+        console.log(error);
+        alert("Ocorreu um erro ao se inscrever. Tente novamente mais tarde.");
+    }
+
+  }
+  
   render() {
     return (
       <form onSubmit={this.onSubmit.bind(this)}>
