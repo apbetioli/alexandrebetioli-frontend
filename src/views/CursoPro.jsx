@@ -77,6 +77,7 @@ class CursoPro extends View {
                   formId="1327091"
                   buttonText={buttonText}
                   redirect="/obrigado-espera"
+                  tag="ESPERA"
                 />
               </Col>
               <Col lg="6">

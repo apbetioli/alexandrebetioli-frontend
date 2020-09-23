@@ -9,7 +9,7 @@ class ObrigadoEspera extends React.Component {
         <ol>
           <li>
             Acesse seu email e cheque se recebeu o{" "}
-            <strong>email de confirmação</strong>
+            <strong>Confirme a Inscrição</strong>
           </li>
           <li>
             Caso não receba nos próximos 10 minutos, veja se ele caiu na caixa

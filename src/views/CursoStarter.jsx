@@ -43,7 +43,7 @@ class CursoStarter extends View {
                   disponível!
                 </p>
 
-                <EmailForm formId="1386818" redirect="/obrigado-starter" />
+                <EmailForm formId="1386818" redirect="/obrigado-starter" tag="STARTER" />
               </Col>
               <Col lg="6" className="centered">
                 <img

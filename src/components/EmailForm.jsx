@@ -1,7 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { Button, Col, FormGroup, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from "reactstrap";
-import api from "../services/api";
+import api from "services/api";
 
 class EmailForm extends React.Component {
   constructor(props) {
@@ -20,7 +20,8 @@ class EmailForm extends React.Component {
 
     try {
       let form = {
-        email: this.state.email
+        email: this.state.email,
+        tag: this.props.tag
       };
 
       await api.post('/subscribe', form);
@@ -85,6 +86,7 @@ class EmailForm extends React.Component {
 EmailForm.defaultProps = {
   buttonText: "Quero ser avisado",
   redirect: "/obrigado-espera",
+  tag: "ESPERA"
 };
 
 export default withRouter(EmailForm);

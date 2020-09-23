@@ -40,6 +40,7 @@ class Planilha extends View {
                   formId="1288625"
                   buttonText="Quero receber a planilha"
                   redirect="/obrigado-planilha"
+                  tag="PLANILHA"
                 />
               </Col>
               <Col lg="6">
