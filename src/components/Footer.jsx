@@ -47,14 +47,6 @@ class Footer extends React.Component {
                     tooltip="Inscreva-se no canal do YouTube"
                   />
 
-                  <MenuItem
-                    id="telegramlink"
-                    icon="fa fa-telegram-plane"
-                    text="Telegram"
-                    textClass="d-none"
-                    href="https://t.me/alexandrebetioli3d"
-                    tooltip="Entre no canal do Telegram"
-                  />
                 </Nav>
               </Container>
             </Navbar>

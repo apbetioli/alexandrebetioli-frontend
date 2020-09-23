@@ -122,15 +122,6 @@ class Header extends React.Component {
                     tooltip="Inscreva-se no canal do YouTube"
                   />
 
-                  <MenuItem
-                    id="telegramlink"
-                    icon="fa fa-telegram-plane"
-                    text="Telegram"
-                    textClass="d-lg-none"
-                    href="https://t.me/alexandrebetioli3d"
-                    tooltip="Entre no canal do Telegram"
-                  />
-
                   <NavItem className="d-none">
                     <NavLink
                       className="nav-link-icon btn-primary btn-login d-none d-lg-block"
