@@ -2,6 +2,13 @@ html {
   background-color: black;
 }
 
+.btn {
+  &.disabled {
+    cursor: wait;
+    transform: none;
+  }
+}
+
 .btn-login {
   border: none;
 
