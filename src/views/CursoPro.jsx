@@ -1,6 +1,5 @@
 import EmailForm from "components/EmailForm";
 import Footer from "components/Footer";
-import Header from "components/Header";
 import QuemSouEu from "components/QuemSouEu";
 import { format } from "date-fns";
 import React from "react";
@@ -57,7 +56,6 @@ class CursoPro extends View {
           <meta name="robots" content="index,follow"></meta>
         </MetaTags>
 
-        <Header />
         <section className="section black">
           <Container>
             <Row>

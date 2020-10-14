@@ -1,5 +1,4 @@
 import Footer from "components/Footer";
-import Header from "components/Header";
 import React from "react";
 import { ReactTitle } from "react-meta-tags";
 import { Button, Card, CardBody, CardHeader, Col, Container, Form, FormGroup, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from "reactstrap";
@@ -12,7 +11,6 @@ class Login extends View {
       <div ref="main">
         <ReactTitle title="Área de membros - Alexandre Betioli" />
 
-        <Header />
         <section className="section section-shaped section-lg">
           <div className="shape shape-style-1 bg-gradient-default">
             <span />

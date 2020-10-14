@@ -13,7 +13,6 @@ class ObrigadoCompra extends React.Component {
           <meta name="robots" content="noindex,nofollow"></meta>
         </MetaTags>
 
-        <Header />
         <section className="section">
           <Container>
             <Row>

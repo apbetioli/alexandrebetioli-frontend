@@ -1,6 +1,5 @@
 import EmailForm from "components/EmailForm";
 import Footer from "components/Footer";
-import Header from "components/Header";
 import React from "react";
 import { MetaTags } from "react-meta-tags";
 import { Card, CardBody, CardImg, Col, Container, Row } from "reactstrap";
@@ -23,7 +22,6 @@ class Planilha extends View {
           <meta name="robots" content="index,follow"></meta>
         </MetaTags>
 
-        <Header />
         <section className="section black">
           <Container>
             <Row>

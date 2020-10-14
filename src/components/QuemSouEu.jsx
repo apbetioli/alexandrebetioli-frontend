@@ -19,11 +19,10 @@ class QuemSouEu extends React.Component {
               <span className="text-primary">Alexandre</span> Betioli
             </h2>
             <p>
-              Acredito que compartilhar o conhecimento é a melhor forma de
-              aprender. Também acredito que os empreendedores brasileiros
-              precisam aproveitar mais as oportunidades que a impressão 3D tem a
-              oferecer. Minha missão é levar todo o meu conhecimento de
-              impressão 3D para o maior número de pessoas possível.
+              Acredito que os empreendedores brasileiros precisam aproveitar
+              mais as oportunidades que a impressão 3D tem a oferecer, por isso
+              minha missão é levar todo o meu conhecimento de impressão 3D e
+              empreendedorismo para o maior número de pessoas possível.
             </p>
           </Col>
         </Row>

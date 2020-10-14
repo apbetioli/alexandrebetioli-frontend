@@ -41,8 +41,8 @@ class FAQs extends React.Component {
             <h3 className="centered">F.A.Q. - PERGUNTAS FREQUENTES</h3>
           </Col>
           <FAQ id="q2" question="Pra quem é esse curso?">
-            Este curso é para quem quer começar a ter uma renda com impressão
-            3D.
+            Este curso é para quem quer empreender e começar a ter uma renda com
+            impressão 3D.
           </FAQ>
           <FAQ id="q9" question="Preciso de uma impressora 3D?">
             Não necessariamente. O curso é focado no aspecto operacional do
@@ -61,23 +61,21 @@ class FAQs extends React.Component {
             que quiser você poderá voltar e revisitar o curso.
           </FAQ>
           <FAQ id="q5" question="O curso emite certificado?">
-            Sim ao término do curso você irá receber o certificado de conclusão
-            caso tenha tido pelo menos uma venda.
+            Sim ao término do curso você irá receber o certificado de conclusão.
           </FAQ>
           <FAQ id="q6" question="Como posso tirar minhas dúvidas?">
             Cada aula possui uma área para dúvidas na plataforma de conteúdo e
-            você também poderá tirar dúvidas na comunidade exclusiva do curso.
+            você também poderá tirar dúvidas no grupo privado do curso.
           </FAQ>
           <FAQ id="q1" question="Como será entregue?">
             O curso é online e em vídeo, disponibilizado através de uma
-            plataforma especializada em ensino à distância. As aulas e os
-            módulos são liberados semanalmente ao longo dos 2 meses iniciais.
+            plataforma especializada em ensino à distância. Todas as aulas estão
+            disponíveis desde o momento da matrícula.
           </FAQ>
           <FAQ id="q7" question="Quais são os horários das aulas? ">
             O curso será gravado e você poderá assistir a qualquer momento que
             quiser, quantas vezes quiser e de onde quiser, desde que tenha uma
-            conexão com a internet. As lives de acompanhamento também ficarão
-            gravadas.
+            conexão com a internet.
           </FAQ>
           <FAQ id="q8" question="Quais são as formas de pagamento?">
             Você poderá pagar por boleto ou no cartão de crédito. À vista ou

@@ -1,6 +1,5 @@
 import EmailForm from "components/EmailForm";
 import Footer from "components/Footer";
-import Header from "components/Header";
 import QuemSouEu from "components/QuemSouEu";
 import React from "react";
 import { MetaTags } from "react-meta-tags";
@@ -24,7 +23,6 @@ class CursoStarter extends View {
           <meta name="robots" content="index,follow"></meta>
         </MetaTags>
 
-        <Header />
         <section className="section black">
           <Container>
             <Row>

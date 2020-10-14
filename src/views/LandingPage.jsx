@@ -1,6 +1,5 @@
 import ActionButton from "components/ActionButton";
 import Footer from "components/Footer";
-import Header from "components/Header";
 import React from "react";
 import MetaTags from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
@@ -25,7 +24,6 @@ class LandingPage extends View {
           <meta name="robots" content="index,follow"></meta>
         </MetaTags>
 
-        <Header />
         <section className="section black">
           <Container className="hero">
             <Row>

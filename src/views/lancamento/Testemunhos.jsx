@@ -21,18 +21,26 @@ class Testemunhos extends React.Component {
           </Col>
         </Row>
         <Row>
-          <Col lg="6">
+          <Col>
+            <br />
             <Card>
               <CardBody>
                 <CardText>
-                  "Gostei do video pois vc vai direto ao ponto no que pretende
-                  no titulo, e se o curso que vc pretende fazer for nesse nivel
-                  vai ser muito bom."
+                  "Em vários cursos que já realizei nunca recebi uma assistência
+                  tão bacana quanto com o Alexandre, que expus a minha dúvida e
+                  o meu problema e o mesmo realizou testes e me ajudou a
+                  identificar o problema. Após isso consegui realizar as
+                  mudanças necessárias e o problema já não existe mais. Assim
+                  tbm como definir o custo de meu trabalho. Aí percebemos quando
+                  a pessoa entende e fala com clareza aquilo que ensina. Só
+                  tenho aprendido desde que comecei a acompanhá-lo."
                 </CardText>
               </CardBody>
-              <CardFooter>Adriano Barros</CardFooter>
+              <CardFooter>Eduardo José Rogério Nunes</CardFooter>
             </Card>
           </Col>
+        </Row>
+        <Row>
           <Col lg="6">
             <Card>
               <CardBody>
@@ -66,26 +74,6 @@ class Testemunhos extends React.Component {
                 </CardText>
               </CardBody>
               <CardFooter>Ismael de Azevedo Moura</CardFooter>
-            </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <br />
-            <Card>
-              <CardBody>
-                <CardText>
-                  "Em vários cursos que já realizei nunca recebi uma assistência
-                  tão bacana quanto com o Alexandre, que expus a minha dúvida e
-                  o meu problema e o mesmo realizou testes e me ajudou a
-                  identificar o problema. Após isso consegui realizar as
-                  mudanças necessárias e o problema já não existe mais. Assim
-                  tbm como definir o custo de meu trabalho. Aí percebemos quando
-                  a pessoa entende e fala com clareza aquilo que ensina. Só
-                  tenho aprendido desde que comecei a acompanhá-lo."
-                </CardText>
-              </CardBody>
-              <CardFooter>Eduardo José Rogério Nunes</CardFooter>
             </Card>
           </Col>
         </Row>

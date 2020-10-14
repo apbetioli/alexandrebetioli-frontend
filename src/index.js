@@ -13,7 +13,7 @@ import Comunidade from "views/Comunidade";
 import Quiz from "views/curso/Quiz";
 import CursoPro from "views/CursoPro";
 import CursoStarter from "views/CursoStarter";
-import Lancamento from "views/lancamento/Lancamento";
+import Lancamento from "views/lancamento/LancamentoMairo";
 import PreLancamento from "views/lancamento/PreLancamento";
 import LandingPage from "views/LandingPage";
 import Login from "views/Login";
@@ -25,10 +25,10 @@ import Planilha from "views/Planilha";
 import * as serviceWorker from "./serviceWorker";
 
 const dates = {
-  pl1: new Date("2020-06-12 08:00:00"),
-  pl2: new Date("2020-06-14 20:00:00"),
-  start: new Date("2020-06-15 08:00:00"),
-  end: new Date("2020-06-22 00:00:00"),
+  pl1: new Date("2020-10-19 08:00:00"),
+  pl2: new Date("2020-10-19 08:00:00"),
+  start: new Date("2020-10-19 08:00:00"),
+  end: new Date("2020-10-23 23:59:00"),
 };
 
 const lancamento_debug_render = (props) => {
@@ -59,7 +59,8 @@ ReactDOM.render(
   <>
     <Router>
       <Switch>
-        <Route path="/" exact component={LandingPage} />
+        <Route path="/" exact render={curso_render} />
+        <Route path="/home" exact component={LandingPage} />
         <Route path="/curso" exact render={curso_render} />
         <Route path="/starter" exact component={CursoStarter} />
         <Route path="/comunidade" exact component={Comunidade} />

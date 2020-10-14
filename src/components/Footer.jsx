@@ -20,33 +20,35 @@ class Footer extends React.Component {
                 </NavbarBrand>
 
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                  <MenuItem
-                    id="facebooklink"
-                    icon="fa fa-facebook-square"
-                    text="Facebook"
-                    textClass="d-none"
+                  <a
+                    className="nav-link-icon"
                     href="https://www.facebook.com/alexandrebetioli3d"
-                    tooltip="Curta nossa página no Facebook"
-                  />
+                    id="facebooklink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={require("assets/img/facebook.png")} />
+                  </a>
 
-                  <MenuItem
-                    id="instagramlink"
-                    icon="fa fa-instagram"
-                    text="Instagram"
-                    textClass="d-none"
+                  <a
+                    className="nav-link-icon"
                     href="https://www.instagram.com/alexandrebetioli3d"
-                    tooltip="Siga-nos no Instagram"
-                  />
+                    id="instagramlink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={require("assets/img/instagram.png")} />
+                  </a>
 
-                  <MenuItem
-                    id="youtubelink"
-                    icon="fa fa-youtube"
-                    text="Youtube"
-                    textClass="d-none"
+                  <a
+                    className="nav-link-icon"
                     href="https://www.youtube.com/channel/UCsW8AqQR62iwXoiWYfe-ovA"
-                    tooltip="Inscreva-se no canal do YouTube"
-                  />
-
+                    id="youtubelink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={require("assets/img/youtube.png")} />
+                  </a>
                 </Nav>
               </Container>
             </Navbar>
@@ -54,13 +56,18 @@ class Footer extends React.Component {
           <Container>
             <Row>
               <Col lg="12" className="centered">
-                <a className="footer-link" href="mailto:contato@alexandrebetioli.com.br">Contato</a>
+                <a
+                  className="footer-link"
+                  href="mailto:contato@alexandrebetioli.com.br"
+                >
+                  Contato
+                </a>
               </Col>
             </Row>
             <Row>
               <Col lg="12">
                 <div className="copyright">
-                  © {new Date().getFullYear()} - Alexandre Betioli
+                  © {new Date().getFullYear()} - Alexandre Betioli | Todos os direitos reservados
                 </div>
               </Col>
             </Row>

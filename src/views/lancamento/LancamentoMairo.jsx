@@ -1,30 +1,24 @@
 import ActionButton from "components/ActionButton";
 import Footer from "components/Footer";
-import QuemSouEu from "components/QuemSouEu";
 import React from "react";
 import Countdown from "react-countdown";
 import { MetaTags } from "react-meta-tags";
-import { Col, Container, Row } from "reactstrap";
+import { Alert, Col, Container, Row } from "reactstrap";
 import View from "views/View";
-import Bonus from "./Bonus";
-import Conteudo from "./Conteudo";
-import FAQs from "./FAQs";
 import Garantia from "./Garantia";
-import Testemunhos from "./Testemunhos";
 
 class Lancamento extends View {
   render() {
     let today = new Date();
-    let videoURL = "https://www.youtube.com/embed/5y7SuLcMtO0?rel=0"; //with bonus
+    let videoURL = "https://www.youtube.com/embed/MY-aQo1LdUw?rel=0"; //with bonus
     let ctaText = "Quero fazer minha matrícula com R$ 200 de desconto";
     let hotlink = "https://pay.hotmart.com/Q23252637E?off=e7uj880s";
-    let atencao = "ATENÇÃO: Desconto de R$ 200 somente hoje";
+    let atencao = "Assista o video até o final antes de fazer sua matrícula!";
 
     if (today >= new Date("2020-10-20 00:00:00")) {
-      videoURL = "https://www.youtube.com/embed/N4WPz8pasxI?rel=0";
+      videoURL = "https://www.youtube.com/embed/VpHIxJakIGc?rel=0";
       ctaText = "Quero fazer minha matrícula agora";
       hotlink = "https://pay.hotmart.com/Q23252637E?off=v8krlpzo";
-      atencao = "ATENÇÃO: Matrículas abertas somente até 23/10";
     }
 
     let cta = (
@@ -77,7 +71,7 @@ class Lancamento extends View {
         } else {
           return (
             <Col lg="12">
-              <p>{atencao}</p>
+              <Alert color="info">{atencao}</Alert>
             </Col>
           );
         }
@@ -128,54 +122,6 @@ class Lancamento extends View {
 
         <section className="section black">
           <Garantia />
-        </section>
-
-        <section className="section">
-          <Container>
-            <Row>
-              <Col lg="6">
-                <h2>Crie seu negócio online de impressão 3D</h2>
-                <p>
-                  Vou ensinar você tudo o que aprendi no campo de batalha tendo
-                  um e-commerce de impressão 3D. Você vai aprender como vender
-                  em redes sociais, marketplaces e no seu próprio e-commerce do
-                  jeito certo.
-                </p>
-                <p>
-                  Coloque a sua impressora para aquecer pois ela vai trabalhar
-                  como nunca!
-                </p>
-              </Col>
-              <Col lg="6">
-                <img
-                  alt="..."
-                  src={require("assets/img/factory.jpg")}
-                  className="hero-img"
-                />
-              </Col>
-            </Row>
-          </Container>
-        </section>
-
-        <section className="section black">
-          <Conteudo />
-        </section>
-
-        <section className="section">
-          <Testemunhos />
-        </section>
-
-        <section className="section black">
-          <Bonus />
-        </section>
-
-        <section className="section">
-          <FAQs />
-          {cta}
-        </section>
-
-        <section className="section">
-          <QuemSouEu />
         </section>
 
         <Footer />
