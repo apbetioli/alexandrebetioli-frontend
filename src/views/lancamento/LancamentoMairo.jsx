@@ -120,7 +120,7 @@ class Lancamento extends View {
           {cta}
         </section>
 
-        <section className="section black">
+        <section className="black">
           <Garantia />
         </section>
 

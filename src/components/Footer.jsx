@@ -59,7 +59,7 @@ class Footer extends React.Component {
                   className="footer-link"
                   href="mailto:contato@alexandrebetioli.com.br"
                 >
-                  Contato
+                  Entre em contato
                 </a>
               </Col>
             </Row>
