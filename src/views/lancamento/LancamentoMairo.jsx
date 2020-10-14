@@ -3,7 +3,7 @@ import Footer from "components/Footer";
 import React from "react";
 import Countdown from "react-countdown";
 import { MetaTags } from "react-meta-tags";
-import { Alert, Col, Container, Row } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import View from "views/View";
 import Garantia from "./Garantia";
 
@@ -71,7 +71,7 @@ class Lancamento extends View {
         } else {
           return (
             <Col lg="12">
-              <Alert color="info">{atencao}</Alert>
+              <p>{atencao}</p>
             </Col>
           );
         }
