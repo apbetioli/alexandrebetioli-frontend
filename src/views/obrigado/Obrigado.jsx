@@ -1,6 +1,5 @@
 import ActionButton from "components/ActionButton";
 import Footer from "components/Footer";
-import Header from "components/Header";
 import React from "react";
 import { MetaTags } from "react-meta-tags";
 import { Button, Col, Container, Row } from "reactstrap";

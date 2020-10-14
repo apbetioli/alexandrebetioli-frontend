@@ -27,7 +27,7 @@ class Footer extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={require("assets/img/facebook.png")} />
+                    <img alt="" src={require("assets/img/facebook.png")} />
                   </a>
 
                   <a
@@ -37,7 +37,7 @@ class Footer extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={require("assets/img/instagram.png")} />
+                    <img alt="" src={require("assets/img/instagram.png")} />
                   </a>
 
                   <a
@@ -47,7 +47,7 @@ class Footer extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={require("assets/img/youtube.png")} />
+                    <img alt="" src={require("assets/img/youtube.png")} />
                   </a>
                 </Nav>
               </Container>
