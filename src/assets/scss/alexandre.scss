@@ -90,6 +90,10 @@ html {
   img {
     height: 30px;
   }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
 }
 
 .hero-img {
