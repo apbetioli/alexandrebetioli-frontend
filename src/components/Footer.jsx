@@ -1,4 +1,3 @@
-import MenuItem from "components/MenuItem";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, Nav, Navbar, NavbarBrand, Row } from "reactstrap";
