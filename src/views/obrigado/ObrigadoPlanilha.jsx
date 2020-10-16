@@ -4,27 +4,16 @@ import Obrigado from "./Obrigado";
 class ObrigadoPlanilha extends React.Component {
   render() {
     return (
-      <Obrigado title="Ação necessária!">
-        <p className="lead">Siga os passos abaixo para confirmar seu email!</p>
-        <ol>
-          <li>
-            Acesse seu email e cheque se recebeu o email{" "}
-            <strong>Confirme a Inscrição</strong>
-          </li>
-          <li>
-            Caso não receba nos próximos 10 minutos, veja se ele caiu na caixa
-            de <strong>SPAM ou LIXEIRA </strong>
-            ou outras abas de Promoções e Atualizações para GMAIL. Às vezes o
-            email cai lá automaticamente.
-          </li>
-          <li>
-            Abra o email e <strong>clique no link de confirmação</strong>
-          </li>
-          <li>
-            Pronto! A planilha será encaminhada automaticamente ao seu email em
-            alguns instantes!
-          </li>
-        </ol>
+      <Obrigado title="Sucesso!">
+        <p className="lead">
+          A planilha está sendo encaminhada neste momento para seu email!
+        </p>
+        <p>
+          Caso não receba nos próximos 10 minutos, veja se ele caiu na caixa de{" "}
+          <strong>SPAM ou LIXEIRA </strong>
+          ou outras abas de Promoções e Atualizações para GMAIL. Às vezes o
+          email cai lá automaticamente.
+        </p>
 
         <p>
           Qualquer dúvida entre em contato pelo email
