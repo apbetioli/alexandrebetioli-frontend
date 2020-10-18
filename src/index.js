@@ -25,9 +25,9 @@ import Planilha from "views/Planilha";
 import * as serviceWorker from "./serviceWorker";
 
 const dates = {
-  pl1: new Date("2020-10-19 08:00:00"),
-  pl2: new Date("2020-10-19 08:00:00"),
-  start: new Date("2020-10-19 08:00:00"),
+  pl1: new Date("2020-10-19 09:00:00"),
+  pl2: new Date("2020-10-19 09:00:00"),
+  start: new Date("2020-10-19 09:00:00"),
   end: new Date("2020-10-23 23:59:00"),
 };
 
