@@ -59,7 +59,7 @@ ReactDOM.render(
   <>
     <Router>
       <Switch>
-        <Route path="/" exact render={curso_render} />
+        <Route path="/" exact component={Planilha} />
         <Route path="/home" exact component={LandingPage} />
         <Route path="/curso" exact render={curso_render} />
         <Route path="/starter" exact component={CursoStarter} />
